@@ -67,12 +67,14 @@ const UnderConstruction = () => {
 
    return (
       <main className="construction d-flex flex-column align-items-center justify-content-center">
-         <div className="img-container">
-            <Image unoptimized alt="logo"
-                   quality={100} src={logo}/>
-         </div>
          <div className="construction-heading">
-            <h1>Under Construction</h1>
+            <div className="heading">
+               <div className="img-container">
+                  <Image unoptimized alt="logo"
+                         quality={100} src={logo}/>
+               </div>
+               <h1>Under Construction</h1>
+            </div>
             <h3>Website is nearly ready {`${progressValue}%`}</h3>
          </div>
          <div className="progress">
