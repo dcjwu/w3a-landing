@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && cd cms && npm i && npm run build",
+    "build": "next build && cd cms && yum install bind-utils -y && yum install -y hostname && npm i && npm run build",
     "start": "next start && cd cms && npm run start",
     "lint": "next lint"
   },
