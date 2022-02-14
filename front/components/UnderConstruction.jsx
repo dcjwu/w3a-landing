@@ -38,7 +38,6 @@ const UnderConstruction = () => {
          setSuccess("")
       } else if (!name) {
          setError("Please, enter your name.")
-         setSuccess("")
       } else {
          const data = {
             email,
