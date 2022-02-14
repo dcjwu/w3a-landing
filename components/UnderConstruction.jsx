@@ -4,6 +4,7 @@ import axios from "axios"
 import Image from "next/image"
 
 import logo from "../assets/images/logo.png"
+import Spinner from "./_UI/Spinner"
 
 const UnderConstruction = () => {
    const [progressValue, setProgressValue] = useState(0)
@@ -18,6 +19,7 @@ const UnderConstruction = () => {
 
    const [error, setError] = useState("")
    const [success, setSuccess] = useState("")
+   const [loading, setLoading] = useState(false)
 
    useEffect(() => {
       setInterval(() => {
@@ -40,6 +42,7 @@ const UnderConstruction = () => {
             name,
             message
          }
+         setLoading(true)
          axios.post("/api/sendgrid", data, { headers: { "Content_type": "application/json" } })
             .then(res => {
                if (res.status === 200) {
@@ -48,13 +51,16 @@ const UnderConstruction = () => {
                   setEmail("")
                   setMessage("")
                   setError("")
+                  setLoading(false)
                } else {
                   setError("Unexpected Error.")
+                  setLoading(false)
                }
             })
             .catch(() => {
                setError("Something went wrong.")
                setSuccess("")
+               setLoading(false)
             })
       }
    }
@@ -89,7 +95,13 @@ const UnderConstruction = () => {
                <textarea className="form-control" placeholder="Message" value={message}
                          onChange={onMessageChange}/>
             </div>
-            <button className="btn" type="submit">Send</button>
+            <button className="btn" disabled={loading} type="submit">
+               {
+                  loading
+                     ? <Spinner height={15} width={45}/>
+                     : "Send"
+               }
+            </button>
          </form>
          <div className="contact">
             <a href="https://www.linkedin.com/company/web3app-agency" rel="noreferrer" target="_blank">
