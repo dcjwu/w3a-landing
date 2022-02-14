@@ -46,15 +46,16 @@
         text-transform: uppercase;
         color: $highlight-color;
         text-align: center;
+        font-size: 2.5rem;
         @include breakpoint($bp-576) {
-          font-size: 1.9rem;
+          font-size: 2.2rem;
         }
       }
       p {
-        font-size: 1.7rem;
+        font-size: 2rem;
         text-align: center;
         @include breakpoint($bp-576) {
-          font-size: 1.5rem;
+          font-size: 1.7rem;
         }
       }
     }

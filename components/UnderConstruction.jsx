@@ -79,11 +79,10 @@ const UnderConstruction = () => {
             </div>
             <div className="about-us">
                <h3>About us</h3>
-               <p>For more than five years we develop high-quality blockchain custom projects for companies all around the
-                  world, provide maintenance, and guarantee the quality of our work. With our business-oriented
-                  approach, we’re ready to provide expertise on every stage of blockchain-powered software development
-                  along with qualitative customer service. Working with us you get more than a technical implementer -
-                  you get a technical partner who strives for your success.</p>
+               <p>For more than five years we develop high-quality blockchain software, provide maintenance, and guarantee
+                  the quality of our work. Our business-oriented approach provides expertise on every stage of
+                  blockchain-powered software development along with qualitative customer service. Working with us you
+                  get more than a technical implementer - you get a technical partner who strives for your success.</p>
             </div>
          </div>
          <form className="form" onSubmit={handleSubmit}>
