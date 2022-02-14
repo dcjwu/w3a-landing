@@ -98,11 +98,13 @@
       color: $main-color;
       position: relative;
       transition: border-color .2s linear;
+      font-family: $font-main;
     }
     & input::placeholder,
     & textarea::placeholder {
       color: rgba($main-color, .3);
       transition: color .2s linear;
+      font-family: $font-additional;
     }
     & input:focus,
     & textarea:focus{
