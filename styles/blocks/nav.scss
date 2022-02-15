@@ -3,17 +3,10 @@
 
 .nav {
   padding: 2rem 0;
-  font-size: 2.5rem;
-  //font-family: $font-text;
-  //font-size: 1.9rem;
   height: $nav-height;
   width: 100%;
   background-color: rgba(32, 32, 32, .5);
   backdrop-filter: blur(50px);
-  @include breakpoint($bp-576) {
-    padding: 1rem 0;
-    height: $nav-height-576;
-  }
 
   &__wrapper {
     display: flex;
@@ -25,13 +18,14 @@
   }
 
   &__logo {
-    height: 59px;
+    height: $nav-logo-height;
   }
 
   &__links {
     display: flex;
     align-items: center;
     gap: 3rem;
+    font-size: 2rem;
     @include breakpoint($bp-991) {
       display: none;
     }
@@ -129,8 +123,6 @@
     transform: translateX(100%);
     transition: transform .2s linear;
     @include breakpoint($bp-576) {
-      margin-top: $nav-height-576;
-      height: calc(100vh - #{$nav-height-576});
       width: 80%;
     }
     &.active {
