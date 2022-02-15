@@ -1,5 +1,6 @@
 import Head from "next/head"
 
+import Navbar from "../components/Navbar/Navbar"
 import UnderConstruction from "../components/UnderConstruction"
 
 export default function Home() {
@@ -19,8 +20,9 @@ export default function Home() {
                   property="og:description"/>
          </Head>
 
+         <Navbar/>
          <div className="container">
-            <UnderConstruction/>
+            {/*<UnderConstruction/>*/}
          </div>
       </>
    )
