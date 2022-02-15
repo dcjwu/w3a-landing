@@ -12,63 +12,26 @@
 }
 
 .button-action {
-  width: 30rem;
+  color: #fff;
   cursor: pointer;
-  position: relative;
-
-  span {
-    display: block;
-    //width: 25rem;
-    height: 5rem;
-    line-height: 5rem;
-    font-family: $font-main;
-    font-weight: 400;
-    text-decoration: none;
-    background: #333;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
+  font-size: 2.2rem;
+  line-height: 4.5rem;
+  width: 20rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  &.effect {
+    background: lighten($bg-color, 3%);
+    border: 1px solid darken($bg-color, 4%);
+    box-shadow: 0 2px 0 darken($bg-color, 5%), 2px 4px 6px darken($bg-color, 2%);
     letter-spacing: 1px;
-    border: 3px solid #333;
-    transition: all .35s;
-
+    transition: all 150ms linear;
     &:hover {
-      //width: 20rem;
-      border: 3px solid $highlight-color;
-      background: rgba($bg-color, .6);
-      color: $highlight-color;
-
-      & + .icon {
-        border: 3px solid $highlight-color;
-        right: -5%;
-
-        svg {
-          opacity: 1;
-        }
-      }
-    }
-  }
-
-  .icon {
-    width: 50px;
-    height: 50px;
-    border: 3px solid transparent;
-    position: absolute;
-    transform: rotate(45deg);
-    right: 0;
-    top: 0;
-    z-index: 0;
-    transition: all .35s;
-
-    svg {
-      width: 30px;
-      position: absolute;
-      top: calc(50% - 15px);
-      left: calc(50% - 15px);
-      transform: rotate(135deg);
-      fill: $highlight-color;
-      transition: all .35s;
-      opacity: 0;
+      background: darken($bg-color, 1.5%);
+      border: 1px solid rgba(#000, .05);
+      color: lighten($bg-color, 18%);
+      text-decoration: none;
+      text-shadow: -1px -1px 0 darken($bg-color, 9.5%);
+      transition: all 250ms linear;
     }
   }
 }

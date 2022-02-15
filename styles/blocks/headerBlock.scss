@@ -1,35 +1,51 @@
 @import "../vendor/vars";
+@import "../vendor/mixins";
 
 .header {
   min-height: calc(100vh - #{$nav-height});
   &__wrapper {
-    padding-top: 5rem;
+    padding-top: 9.5rem;
+    @include breakpoint($bp-576) {
+      padding-top: 6.5rem;
+    }
     p {
-      margin-bottom: -1rem;
       font-family: $font-text;
       text-align: right;
       color: rgba($main-color, .4);
+      @include breakpoint($bp-576) {
+        font-size: 1.9rem;
+      }
     }
   }
   &__heading {
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
     font-family: $font-heading;
     font-weight: 800;
     font-size: 9rem;
     text-align: right;
+    @include breakpoint($bp-576) {
+      margin-bottom: 5rem;
+      font-size: 7rem;
+    }
     span {
       color: $highlight-color;
     }
   }
   &__image {
-    padding: 10rem;
+    padding: 14rem;
     background: url(../../assets/images/header/4-min.png) 100%;
     background-size: cover;
+    @include breakpoint($bp-767) {
+      padding: 10rem;
+    }
   }
   &__buttons {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 5rem;
+    @include breakpoint($bp-576) {
+      align-items: center;
+    }
   }
 }
