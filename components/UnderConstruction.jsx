@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import Image from "next/image"
 
-import logo from "../assets/images/logo-1.svg"
+import logo from "../assets/images/logo.svg"
 import Spinner from "./_UI/Spinner"
 
 const UnderConstruction = () => {
