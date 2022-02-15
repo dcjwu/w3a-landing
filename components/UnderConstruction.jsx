@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import Image from "next/image"
 
-import logo from "../assets/images/logo.png"
+import logo from "../assets/images/logo-1.svg"
 import Spinner from "./_UI/Spinner"
 
 const UnderConstruction = () => {
@@ -72,8 +72,9 @@ const UnderConstruction = () => {
          <div className="construction-heading">
             <div className="heading">
                <div className="img-container">
-                  <Image unoptimized alt="logo"
-                         quality={100} src={logo}/>
+                  <Image unoptimized alt="logo" height={59}
+                         quality={100}
+                         src={logo} width={300}/>
                </div>
                <h1>Website is Under Construction</h1>
             </div>

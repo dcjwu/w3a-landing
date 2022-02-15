@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="815.1" height="178.54" viewBox="0 0 815.1 178.54">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 160px;
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+        font-family: neo-latina, neo latina;
+      }
+
+      .cls-2 {
+        font-size: 70px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #1cfeba;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1">
+    <text class="cls-1" transform="translate(0.5 121.78)">WEB</text>
+  </g>
+  <g id="Layer_2" data-name="Layer 2">
+    <text class="cls-1" transform="translate(498.12 121.78)">APP</text>
+  </g>
+  <g id="Layer_3" data-name="Layer 3">
+    <text class="cls-2" transform="translate(462.55 162.71)">.agency</text>
+  </g>
+  <g id="Layer_6" data-name="Layer 6">
+    <g>
+      <polygon class="cls-3" points="336.24 119.94 354.95 81.26 427.47 116.34 434.65 113.84 432.15 106.67 378.96 80.94 397.68 42.26 450.86 67.99 458.04 65.49 455.54 58.32 383.01 23.24 391.26 6.19 385.38 6.19 314.69 151.13 400.72 151.13 336.24 119.94"/>
+      <polygon class="cls-3" points="446.44 6.19 498.43 31.33 508.41 60.03 489.7 98.71 475.35 103.7 480.35 118.05 464.34 151.13 472.44 151.13 543.14 6.19 446.44 6.19"/>
+    </g>
+  </g>
+</svg>
