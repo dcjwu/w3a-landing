@@ -15,7 +15,7 @@ const HeaderBlock = () => {
                   <ButtonAction type="button">
                      Presentation
                   </ButtonAction>
-               </div> d
+               </div>
             </div>
          </div>
       </div>
