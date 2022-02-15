@@ -1,0 +1,36 @@
+@import "../vendor/vars";
+
+.header {
+  min-height: calc(100vh - #{$nav-height});
+  &__wrapper {
+    padding-top: 5rem;
+    p {
+      margin-bottom: -1rem;
+      font-family: $font-text;
+      text-align: right;
+      color: rgba($main-color, .4);
+    }
+  }
+  &__heading {
+    margin-bottom: 5rem;
+    font-family: $font-heading;
+    font-weight: 800;
+    font-size: 9rem;
+    text-align: right;
+    span {
+      color: $highlight-color;
+    }
+  }
+  &__image {
+    padding: 10rem;
+    position: relative;
+    background: url(../../assets/images/header/4-min.png) 100%;
+    background-size: cover;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+}

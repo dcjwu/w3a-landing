@@ -1,5 +1,6 @@
 import Head from "next/head"
 
+import HeaderBlock from "../components/HeaderBlock"
 import Navbar from "../components/Navbar/Navbar"
 import UnderConstruction from "../components/UnderConstruction"
 
@@ -22,6 +23,7 @@ export default function Home() {
 
          <Navbar/>
          <div className="container">
+            <HeaderBlock/>
             {/*<UnderConstruction/>*/}
          </div>
       </>
