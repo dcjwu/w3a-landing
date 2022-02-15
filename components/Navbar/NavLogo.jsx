@@ -5,9 +5,9 @@ import logo from "../../assets/images/logo.svg"
 const NavLogo = () => {
    return (
       <div className="nav__logo">
-         <Image alt="logo" height={58} quality={100}
+         <Image alt="logo" height={31.46} quality={100}
                 src={logo}
-                width={295}/>
+                width={160}/>
       </div>
    )
 }
