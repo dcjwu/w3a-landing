@@ -39,7 +39,7 @@ const Spinner = ({ width, height }) => {
    )
 }
 
-Spinner.PropTypes = {
+Spinner.propTypes = {
    width: PropTypes.number.isRequired,
    height: PropTypes.number.isRequired
 }

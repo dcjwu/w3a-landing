@@ -3,6 +3,7 @@
 @import "blocks/underConstruction";
 @import "blocks/navbar";
 @import "./blocks/headerBlock";
+@import "./blocks/aboutBlock";
 
 @font-face {
   font-family: 'neo latina Regular';
@@ -33,5 +34,26 @@
       text-shadow: -1px -1px 0 darken($bg-color, 9.5%);
       transition: all 250ms linear;
     }
+  }
+}
+
+.custom {
+  &__header {
+    margin-bottom: 1rem;
+    font-family: $font-heading;
+    font-weight: $font-bold;
+    font-size: 6rem;
+    text-align: left;
+    text-transform: uppercase;
+    span {
+      color: $highlight-color;
+    }
+  }
+  &__subheader {
+    margin-bottom: 1rem;
+    font-family: $font-heading;
+    font-weight: $font-bold;
+    font-size: 4rem;
+    text-align: left;
   }
 }
