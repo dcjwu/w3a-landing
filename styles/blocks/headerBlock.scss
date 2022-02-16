@@ -3,16 +3,20 @@
 
 .header {
   padding-top: $nav-height;
-  min-height: calc(100vh - #{$nav-height});
+  //min-height: calc(100vh - #{$nav-height});
+  min-height: 100vh;
   &__wrapper {
-    padding-top: 6.5rem;
-    p {
-      font-family: $font-text;
-      text-align: right;
-      color: rgba($main-color, .4);
-      @include breakpoint($bp-576) {
-        font-size: 1.9rem;
-      }
+    padding-top: 10rem;
+    @include breakpoint($bp-991) {
+      padding-top: 5rem;
+    }
+  }
+  &__supheader {
+    font-family: $font-text;
+    text-align: right;
+    color: rgba($main-color, .4);
+    @include breakpoint($bp-576) {
+      font-size: 1.9rem;
     }
   }
   &__heading {
@@ -21,20 +25,30 @@
     font-weight: $font-bold;
     font-size: 9rem;
     text-align: right;
-    @include breakpoint($bp-576) {
+    @include breakpoint($bp-991) {
       margin-bottom: 5rem;
-      font-size: 7rem;
+    }
+    @include breakpoint($bp-576) {
+      font-size: 6rem;
     }
     span {
       color: $highlight-color;
     }
   }
   &__image {
-    padding: 14rem;
+    padding: 8rem;
     background: url(../../assets/images/header-min.png) 100%;
     background-size: cover;
-    @include breakpoint($bp-767) {
-      padding: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint($bp-991) {
+      padding: 5rem;
+      flex-direction: column;
+      gap: 3rem;
+    }
+    @include breakpoint($bp-576) {
+      padding: 2rem;
     }
   }
   &__buttons {
@@ -42,8 +56,20 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 5rem;
+    @include breakpoint($bp-991) {
+      gap: 3rem;
+    }
     @include breakpoint($bp-576) {
       align-items: center;
+    }
+  }
+  &__about {
+    width: 70%;
+    @include breakpoint($bp-991) {
+      width: 100%;
+    }
+    @include breakpoint($bp-576) {
+      font-size: 1.8rem;
     }
   }
 }

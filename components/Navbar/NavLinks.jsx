@@ -8,17 +8,17 @@ const NavLinks = () => {
          </li>
          <li>
             <a href="#about">
-               About
+               Services
             </a>
          </li>
          <li>
             <a href="#staging">
-               Staging
+               Portfolio
             </a>
          </li>
          <li>
             <a href="#contacts">
-               Contacts
+               Contact us
             </a>
          </li>
       </>

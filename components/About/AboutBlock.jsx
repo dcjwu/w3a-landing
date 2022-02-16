@@ -1,4 +1,3 @@
-import BlockHeader from "../_UI/BlockHeader"
 import BlockSubheader from "../_UI/BlockSubheader"
 import SolutionsCard from "./SolutionsCard"
 
@@ -20,15 +19,6 @@ const cardInfo = [
 const AboutBlock = () => {
    return (
       <div className="about">
-         <BlockHeader secondPart="us">
-            About
-         </BlockHeader>
-         <p className="about__text">
-            We develop high-quality blockchain software, provide maintenance, and guarantee the quality of our work. Our
-            business-oriented approach provides expertise on every stage of blockchain-powered software development
-            along with qualitative customer service. Working with us you get more than a technical implementer - you get
-            a technical partner who strives for your success.
-         </p>
          <BlockSubheader>
             Solutions
          </BlockSubheader>
