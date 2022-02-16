@@ -2,10 +2,12 @@
 @import "../vendor/mixins";
 
 .about {
+  margin-bottom: 10rem;
   @include breakpoint($bp-991) {
     margin-top: 5rem;
   }
   &__solutions {
+    margin-bottom: 8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,13 +20,14 @@
       padding: 2rem;
       flex: 0 0 32%;
       height: 28rem;
-      background: linear-gradient(90deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 12%, 1) 100%);
+      //background: linear-gradient(90deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 12%, 1) 100%);
+      background-color: hsla(0, 0%, 12%, 1);
       @include breakpoint($bp-767) {
         flex: 0 0 45%;
       }
       @include breakpoint($bp-576) {
         flex: 0 0 100%;
-        height: 20rem;
+        height: 22rem;
       }
       h4 {
         text-align: left;
@@ -41,6 +44,49 @@
       p {
         font-family: $font-text;
         @include breakpoint($bp-991) {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  &__stack {
+    margin: 1rem 0 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    @include breakpoint($bp-767) {
+      flex-wrap: nowrap;
+      flex: 1;
+      overflow: auto;
+    }
+    .stack {
+      padding: 3rem;
+      flex: 0 0 18%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //background: linear-gradient(90deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 12%, 1) 100%);
+      background-color: hsla(0, 0%, 12%, 1);
+      @include breakpoint($bp-991) {
+        padding: 2rem 1rem 1rem 1rem;
+        flex: 0 0 22%;
+      }
+      @include breakpoint($bp-767) {
+        flex: 0 0 33%;
+      }
+      @include breakpoint($bp-576) {
+        flex: 0 0 50%;
+      }
+      &:hover p {
+        color: $highlight-color;
+      }
+      p {
+        margin-top: 1rem;
+        font-size: 2rem;
+        transition: color .2s linear;
+        @include breakpoint($bp-576) {
           font-size: 1.8rem;
         }
       }

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 
-const SolutionsCard = ({ heading, text, number }) => {
+const SolutionsCard = ({ heading, text }) => {
    return (
       <div className="solution">
          <h4>{heading}</h4>

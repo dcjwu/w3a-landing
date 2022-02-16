@@ -1,35 +1,34 @@
-import BlockSubheader from "../_UI/BlockSubheader"
+import { solutionsCardInfo, stack } from "../../utils/data"
+import BlockHeader from "../_UI/BlockHeader"
 import SolutionsCard from "./SolutionsCard"
-
-const cardInfo = [
-   {
-      heading: "Smart contracts",
-      text: "ETH, EOS, TRON, and other blockchains smart contract development and audition."
-   },
-   {
-      heading: "Crypto wallets",
-      text: "Crypto wallet creation for any platform, feature or currency, favouring client's needs."
-   },
-   {
-      heading: "DeFi",
-      text: "Development of assets tokenization platforms, P2P lending or Neobanks."
-   }
-]
+import Stack from "./Stack/Stack"
 
 const AboutBlock = () => {
+   const { languages, frameworks, dbms, blockchains } = stack
+
    return (
       <div className="about">
-         <BlockSubheader>
+         {/*<BlockSubheader>*/}
+         {/*   Solutions*/}
+         {/*</BlockSubheader>*/}
+         <BlockHeader>
             Solutions
-         </BlockSubheader>
+         </BlockHeader>
          <div className="about__solutions">
             {
-               cardInfo.map((cardData, index) => (
+               solutionsCardInfo.map((cardData, index) => (
                   <SolutionsCard key={cardData.heading} heading={cardData.heading} number={index + 1}
                                  text={cardData.text}/>
                ))
             }
          </div>
+         <BlockHeader>
+            Tech Stack
+         </BlockHeader>
+         <Stack name data={languages} stackName="languages"/>
+         <Stack data={frameworks} stackName="frameworks"/>
+         <Stack data={dbms} stackName="dbms"/>
+         <Stack data={blockchains} stackName="blockchains"/>
       </div>
    )
 }
