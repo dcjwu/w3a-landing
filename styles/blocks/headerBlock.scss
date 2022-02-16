@@ -2,12 +2,10 @@
 @import "../vendor/mixins";
 
 .header {
+  padding-top: $nav-height;
   min-height: calc(100vh - #{$nav-height});
   &__wrapper {
-    padding-top: 9.5rem;
-    @include breakpoint($bp-576) {
-      padding-top: 6.5rem;
-    }
+    padding-top: 6.5rem;
     p {
       font-family: $font-text;
       text-align: right;
