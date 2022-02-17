@@ -1,9 +1,16 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/main.scss"
 
+import { useEffect } from "react"
+
 import Head from "next/head"
 
 function MyApp({ Component, pageProps }) {
+   useEffect(() => {
+      if (typeof window !== "undefined") {
+         window.history.scrollRestoration = "manual"
+      }
+   }, [])
    return (
       <>
          <Head>
