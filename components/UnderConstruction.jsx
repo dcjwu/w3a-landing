@@ -1,72 +1,9 @@
-import { useEffect, useState } from "react"
-
-import axios from "axios"
 import Image from "next/image"
 
 import logo from "../assets/images/logo.svg"
-import Spinner from "./_UI/Spinner"
+import Form from "./Form"
 
 const UnderConstruction = () => {
-   const [progressValue, setProgressValue] = useState(0)
-
-   const [name, setName] = useState("")
-   const [email, setEmail] = useState("")
-   const [message, setMessage] = useState("")
-
-   const onNameChange = ({ target }) => setName(target.value)
-   const onEmailChange = ({ target }) => setEmail(target.value)
-   const onMessageChange = ({ target }) => setMessage(target.value)
-
-   const [error, setError] = useState("")
-   const [success, setSuccess] = useState("")
-   const [loading, setLoading] = useState(false)
-
-   useEffect(() => {
-      setInterval(() => {
-         setProgressValue(prevState => prevState + 1)
-      }, 5000)
-   }, [])
-
-   if (progressValue === 80) {
-      setProgressValue(0)
-   }
-
-   const handleSubmit = e => {
-      e.preventDefault()
-      if (message.length < 8) {
-         setError("Message is too short.")
-         setSuccess("")
-      } else if (!name) {
-         setError("Please, enter your name.")
-      } else {
-         const data = {
-            email,
-            name,
-            message
-         }
-         setLoading(true)
-         axios.post("/api/sendgrid", data, { headers: { "Content_type": "application/json" } })
-            .then(res => {
-               if (res.status === 200) {
-                  setSuccess("Email sent successfully.")
-                  setName("")
-                  setEmail("")
-                  setMessage("")
-                  setError("")
-                  setLoading(false)
-               } else {
-                  setError("Unexpected Error.")
-                  setLoading(false)
-               }
-            })
-            .catch(() => {
-               setError("Something went wrong.")
-               setSuccess("")
-               setLoading(false)
-            })
-      }
-   }
-
    return (
       <main className="construction d-flex flex-column align-items-center justify-content-center">
          <div className="construction-heading">
@@ -86,30 +23,7 @@ const UnderConstruction = () => {
                   get more than a technical implementer - you get a technical partner who strives for your success.</p>
             </div>
          </div>
-         <form className="form" onSubmit={handleSubmit}>
-            <h3>Contact Us</h3>
-            {error && <p className="text-center error">{error}</p>}
-            {success && <p className="text-center success">{success}</p>}
-            <div className="form-group">
-               <input className="form-control" placeholder="Email"
-                      type="email" value={email} onChange={onEmailChange}/>
-            </div>
-            <div className="form-group">
-               <input className="form-control" placeholder="Name"
-                      type="text" value={name} onChange={onNameChange}/>
-            </div>
-            <div className="form-group">
-               <textarea className="form-control" placeholder="Message" value={message}
-                         onChange={onMessageChange}/>
-            </div>
-            <button className="btn" disabled={loading} type="submit">
-               {
-                  loading
-                     ? <Spinner height={15} width={45}/>
-                     : "Send"
-               }
-            </button>
-         </form>
+         <Form title="Contact Us"/>
          <div className="contact">
             <a href="https://www.linkedin.com/company/web3app-agency" rel="noreferrer" target="_blank">
                <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">

@@ -8,9 +8,6 @@ const AboutBlock = () => {
 
    return (
       <div className="about">
-         {/*<BlockSubheader>*/}
-         {/*   Solutions*/}
-         {/*</BlockSubheader>*/}
          <BlockHeader>
             Solutions
          </BlockHeader>
