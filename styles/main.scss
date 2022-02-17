@@ -20,6 +20,9 @@
   width: 20rem;
   text-decoration: none;
   text-transform: uppercase;
+  @include breakpoint($bp-576) {
+    font-size: 2rem;
+  }
   &.effect {
     background: lighten($bg-color, 3%);
     border: 1px solid darken($bg-color, 4%);
