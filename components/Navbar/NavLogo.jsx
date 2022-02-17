@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import logo from "../../assets/images/logo-3.svg"
+import logo from "../../assets/images/logo-4.svg"
 
 const NavLogo = () => {
    return (

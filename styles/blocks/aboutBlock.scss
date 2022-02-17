@@ -2,7 +2,7 @@
 @import "../vendor/mixins";
 
 .about {
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
   @include breakpoint($bp-991) {
     margin-top: 5rem;
   }

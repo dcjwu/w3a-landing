@@ -1,0 +1,155 @@
+{
+  "languages": [
+    {
+      "name": "PHP",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/php.svg",
+      "link": "https://www.php.net/"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/js.svg",
+      "link": "https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/ts.svg",
+      "link": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "Dart",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/dart.svg",
+      "link": "https://dart.dev/"
+    },
+    {
+      "name": "Solidity",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/solidity.svg",
+      "link": "https://soliditylang.org/"
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "Symfony",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/symfony.svg",
+      "link": "https://symfony.com/"
+    },
+    {
+      "name": "NestJS",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/nest.svg",
+      "link": "https://nestjs.com/"
+    },
+    {
+      "name": "Vue.js",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/vue.svg",
+      "link": "https://vuejs.org/"
+    },
+    {
+      "name": "Nuxt",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/nuxt.svg",
+      "link": "https://nuxtjs.org/"
+    },
+    {
+      "name": "React",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/react.svg",
+      "link": "https://reactjs.org/"
+    },
+    {
+      "name": "Next.js",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/next.svg",
+      "link": "https://nextjs.org/"
+    },
+    {
+      "name": "Flutter",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/flutter.svg",
+      "link": "https://flutter.dev/"
+    },
+    {
+      "name": "Truffle",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/truffle.svg",
+      "link": "https://trufflesuite.com/"
+    }
+  ],
+  "dbms": [
+    {
+      "name": "MySQL",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/mysql.svg",
+      "link": "https://www.mysql.com/"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/postgre.svg",
+      "link": "https://www.postgresql.org/"
+    },
+    {
+      "name": "MariaDB",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/mariadb.svg",
+      "link": "https://mariadb.org/"
+    },
+    {
+      "name": "AWS RDS",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/aws-rds.svg",
+      "link": "https://aws.amazon.com/rds/"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/mongodb.svg",
+      "link": "https://www.mongodb.com/"
+    }
+  ],
+  "blockchains": [
+    {
+      "name": "Bitcoin",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/btc.svg",
+      "link": "https://bitcoin.org/en/"
+    },
+    {
+      "name": "Ethereum",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/eth.svg",
+      "link": "https://ethereum.org/en/"
+    },
+    {
+      "name": "BSC",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/bnb.svg",
+      "link": "https://www.bnbchain.world/en/smartChain"
+    },
+    {
+      "name": "Cardano",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/ada.svg",
+      "link": "https://cardano.org/"
+    },
+    {
+      "name": "Terra",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/luna.svg",
+      "link": "https://www.terra.money/"
+    },
+    {
+      "name": "Polkadot",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/dot.svg",
+      "link": "https://polkadot.network/"
+    },
+    {
+      "name": "Polygon",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/matic.svg",
+      "link": "https://polygon.technology/"
+    },
+    {
+      "name": "Litecoin",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/ltc.svg",
+      "link": "https://litecoin.org/"
+    },
+    {
+      "name": "Tron",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/trx.svg",
+      "link": "https://tron.network/"
+    },
+    {
+      "name": "Hedera",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/hbar.svg",
+      "link": "https://www.hedera.com/"
+    },
+    {
+      "name": "EOS",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/eos.svg",
+      "link": "https://eos.io/"
+    }
+  ]
+}

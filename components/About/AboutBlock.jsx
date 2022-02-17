@@ -1,11 +1,12 @@
-import { solutionsCardInfo, stack } from "../../utils/data"
+import { solutionsCardInfo } from "../../utils/data"
+import data from "../../utils/data.json"
 import BlockHeader from "../_UI/BlockHeader"
 import SolutionsCard from "./SolutionsCard"
 import Stack from "./Stack/Stack"
 
 const AboutBlock = () => {
-   const { languages, frameworks, dbms, blockchains } = stack
-
+   const { languages, frameworks, dbms, blockchains } = data
+   
    return (
       <div className="about">
          <BlockHeader>

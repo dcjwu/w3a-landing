@@ -1,8 +1,8 @@
 import PropTypes from "prop-types"
 
-const ButtonAction = ({ children, type }) => {
+const ButtonAction = ({ children, type, ...otherProps }) => {
    return (
-      <button className="button-action effect" type={type}>
+      <button {...otherProps} className="button-action effect" type={type}>
          {children}
       </button>
    )

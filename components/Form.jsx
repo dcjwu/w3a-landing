@@ -2,6 +2,7 @@ import { useState } from "react"
 
 import axios from "axios"
 
+import ButtonAction from "./_UI/ButtonAction"
 import Spinner from "./_UI/Spinner"
 
 const Form = ({ title }) => {
@@ -19,11 +20,14 @@ const Form = ({ title }) => {
 
    const handleSubmit = e => {
       e.preventDefault()
-      if (message.length < 8) {
-         setError("Message is too short.")
+      if (!name.length && !email.length && !message.length) {
+         setError("Please, fill the form.")
          setSuccess("")
       } else if (!name) {
          setError("Please, enter your name.")
+      } else if (message.length < 8) {
+         setError("Message is too short.")
+         setSuccess("")
       } else {
          const data = {
             email,
@@ -54,29 +58,36 @@ const Form = ({ title }) => {
    }
    
    return (
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="form contact" onSubmit={handleSubmit}>
          {title && <h3>{title}</h3>}
-         {error && <p className="text-center error">{error}</p>}
-         {success && <p className="text-center success">{success}</p>}
-         <div className="form-group">
+         {error && <p className="text-center error contact">{error}</p>}
+         {success && <p className="text-center success contact">{success}</p>}
+         <div className="form-group contact">
             <input className="form-control" placeholder="Email"
                    type="email" value={email} onChange={onEmailChange}/>
          </div>
-         <div className="form-group">
+         <div className="form-group contact">
             <input className="form-control" placeholder="Name"
                    type="text" value={name} onChange={onNameChange}/>
          </div>
-         <div className="form-group">
+         <div className="form-group contact">
             <textarea className="form-control" placeholder="Message" value={message}
                          onChange={onMessageChange}/>
          </div>
-         <button className="btn" disabled={loading} type="submit">
+         {/*<button className="btn" disabled={loading} type="submit">*/}
+         {/*   {*/}
+         {/*      loading*/}
+         {/*         ? <Spinner height={15} width={45}/>*/}
+         {/*         : "Send"*/}
+         {/*   }*/}
+         {/*</button>*/}
+         <ButtonAction disabled={loading} type="submit" >
             {
-               loading
+               loading 
                   ? <Spinner height={15} width={45}/>
                   : "Send"
             }
-         </button>
+         </ButtonAction>
       </form>
    )
 }
