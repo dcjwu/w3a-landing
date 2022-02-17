@@ -3,6 +3,7 @@
 
 .about {
   margin-bottom: 12rem;
+  position: relative;
   @include breakpoint($bp-991) {
     margin-top: 5rem;
   }

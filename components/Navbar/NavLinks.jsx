@@ -1,23 +1,23 @@
-const NavLinks = () => {
+const NavLinks = ({ handleClickInside }) => {
    return (
       <>
          <li>
-            <a href="#home">
+            <a href="#home" onClick={handleClickInside}>
                Home
             </a>
          </li>
          <li>
-            <a href="#services">
+            <a href="#services" onClick={handleClickInside}>
                Services
             </a>
          </li>
          <li>
-            <a href="#team">
+            <a href="#team" onClick={handleClickInside}>
                Team
             </a>
          </li>
          <li>
-            <a href="#contact-us">
+            <a href="#contact-us" onClick={handleClickInside}>
                Contact us
             </a>
          </li>

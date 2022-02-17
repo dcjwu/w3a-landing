@@ -9,6 +9,7 @@ const AboutBlock = () => {
    
    return (
       <div className="about">
+         <div id="services"/>
          <BlockHeader>
             Solutions
          </BlockHeader>

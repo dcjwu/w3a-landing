@@ -1,3 +1,5 @@
+import { useRef } from "react"
+
 import Head from "next/head"
 
 import AboutBlock from "../components/About/AboutBlock"
@@ -7,6 +9,7 @@ import HeaderBlock from "../components/HeaderBlock"
 import Navbar from "../components/Navbar/Navbar"
 
 export default function Home() {
+
    return (
       <>
          <Head>
@@ -22,6 +25,7 @@ export default function Home() {
             <meta content="Web3App Agency is a custom software development company that delivers top-level solutions"
                   property="og:description"/>
          </Head>
+
 
          <Navbar/>
          <div className="container">

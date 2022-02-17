@@ -159,6 +159,7 @@
       width: 50rem;
     }
     @include breakpoint($bp-576) {
+      margin-top: $nav-height-576;
       width: 100%;
     }
 

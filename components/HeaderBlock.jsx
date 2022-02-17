@@ -4,7 +4,7 @@ import ButtonAction from "./_UI/ButtonAction"
 const HeaderBlock = () => {
 
    return (
-      <div className="header">
+      <div className="header" id="home">
          <div className="header__wrapper">
             <BlockSupheader>blockchain development</BlockSupheader>
             <h1 className="header__heading">Web3App<span> .Agency</span></h1>

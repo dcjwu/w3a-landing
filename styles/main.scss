@@ -8,6 +8,16 @@
 @import "./blocks/contact-usBlock";
 @import "./blocks/footer";
 
+#services,
+#contact-us {
+  position: absolute;
+  top: -$nav-height;
+  left: 0;
+  @include breakpoint($bp-576) {
+    top: -$nav-height-576;
+  }
+}
+
 @font-face {
   font-family: 'neo latina Regular';
   font-style: normal;

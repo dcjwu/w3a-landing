@@ -21,10 +21,16 @@ const NavSidebar = ({ burgerMenuActive, setBurgerMenuActive }) => {
       }
    }, [burgerMenuActive])
 
+   const handleClickInside = () => {
+      if (burgerMenuActive) {
+         setBurgerMenuActive(false)
+      }
+   }
+
    return (
       <div ref={outsideClickRef} className={classNames("nav__sidebar", { "active": burgerMenuActive })}>
          <ul>
-            <NavLinks/>
+            <NavLinks handleClickInside={handleClickInside}/>
          </ul>
          <div className="footer-sidebar">
             <div className="contact-wrapper">

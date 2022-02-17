@@ -3,9 +3,10 @@ import Image from "next/image"
 import BlockHeader from "./_UI/BlockHeader"
 import Form from "./Form"
 
-const ContactUsBlock = () => {
+const ContactUsBlock = ({ contactUsRef }) => {
    return (
       <div className="contact-us">
+         <div id="contact-us"/>
          <BlockHeader>
             Contact Us
          </BlockHeader>
