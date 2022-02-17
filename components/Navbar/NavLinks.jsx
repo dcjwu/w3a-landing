@@ -7,17 +7,17 @@ const NavLinks = () => {
             </a>
          </li>
          <li>
-            <a href="#about">
+            <a href="#services">
                Services
             </a>
          </li>
          <li>
-            <a href="#staging">
-               Portfolio
+            <a href="#team">
+               Team
             </a>
          </li>
          <li>
-            <a href="#contacts">
+            <a href="#contact-us">
                Contact us
             </a>
          </li>
