@@ -43,6 +43,7 @@
       }
       p {
         font-family: $font-text;
+        font-size: 2rem;
         @include breakpoint($bp-991) {
           font-size: 1.8rem;
         }
