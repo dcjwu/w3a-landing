@@ -19,6 +19,9 @@
   width: 100%;
   position: fixed;
   z-index: 99;
+  @include breakpoint($bp-576) {
+    padding: 1rem .5rem;
+  }
 
   &__wrapper {
     display: flex;
@@ -30,9 +33,12 @@
   }
 
   &__logo {
-    //height: $nav-logo-height;
-    height: 100px;
-    width: 100px;
+    height: 9rem;
+    width: 9rem;
+    @include breakpoint($bp-576) {
+      height: 8rem;
+      width: 8rem;
+    }
   }
 
   &__links {
@@ -167,7 +173,7 @@
         }
       }
     }
-    .footer {
+    .footer-sidebar {
       margin-top: 8rem;
       display: flex;
       flex-direction: column;
@@ -195,32 +201,14 @@
       }
       .contact-b {
         .item {
-          margin-bottom: 2rem;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 1rem;
-          font-family: $font-text;
+          @include contact-item-style;
           font-size: 1.8rem;
-          transition: color .2s ease-in-out;
           @include breakpoint($bp-576) {
             font-size: 1.5rem;
           }
-          &:hover {
-            color: $highlight-color;
-          }
-          &:hover svg {
-            fill: $highlight-color;
-          }
           svg {
-            height: 3rem;
-            fill: $main-color;
-            transition: fill .2s ease-in-out;
             @include breakpoint($bp-576) {
               height: 1.8rem;
-            }
-            @include breakpoint($bp-400) {
-              display: none;
             }
           }
         }

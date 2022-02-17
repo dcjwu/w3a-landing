@@ -2,6 +2,7 @@ import Head from "next/head"
 
 import AboutBlock from "../components/About/AboutBlock"
 import ContactUsBlock from "../components/Contact-usBlock"
+import Footer from "../components/Footer"
 import HeaderBlock from "../components/HeaderBlock"
 import Navbar from "../components/Navbar/Navbar"
 
@@ -29,6 +30,7 @@ export default function Home() {
             <ContactUsBlock/>
             {/*<UnderConstruction/>*/}
          </div>
+         <Footer/>
       </>
    )
 }

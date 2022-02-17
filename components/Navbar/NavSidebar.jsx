@@ -26,7 +26,7 @@ const NavSidebar = ({ burgerMenuActive, setBurgerMenuActive }) => {
          <ul>
             <NavLinks/>
          </ul>
-         <div className="footer">
+         <div className="footer-sidebar">
             <div className="contact-wrapper">
                <div className="contact-t">
                   <a href="https://www.linkedin.com/company/web3app-agency" rel="noreferrer" target="_blank">

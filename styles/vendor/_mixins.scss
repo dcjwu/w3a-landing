@@ -37,4 +37,30 @@
   &.active:after {
     opacity: 1;
   }
-};
+}
+
+;
+
+@mixin contact-item-style {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-family: $font-text;
+  transition: color .2s ease-in-out;
+  &:hover {
+    color: $highlight-color;
+  }
+  &:hover svg {
+    fill: $highlight-color;
+  }
+  svg {
+    height: 3rem;
+    fill: $main-color;
+    transition: fill .2s ease-in-out;
+    @include breakpoint($bp-400) {
+      display: none;
+    }
+  }
+}
