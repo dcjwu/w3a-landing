@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
          <Head>
             <link href="/favicon.ico" rel="icon"/>
             <link href="https://fonts.googleapis.com" rel="preconnect"/>
-            <link crossOrigin href="https://fonts.gstatic.com" rel="preconnect"/>
+            <link crossOrigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&family=Source+Code+Pro:wght@300;400;500;700&display=swap"
                      rel="stylesheet"/>
          </Head>
