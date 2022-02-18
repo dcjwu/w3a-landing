@@ -15,7 +15,8 @@ function MyApp({ Component, pageProps }) {
       <>
          <Head>
             <meta content="#333333" name="theme-color"/>
-            <link href="/icon-180x180.png" rel="apple-touch-icon"/>
+            <meta content="yes" name="apple-mobile-web-app-capable"/>
+            <link href="/icon/icon-180x180.png" rel="apple-touch-icon"/>
             <link href="/favicon.ico" rel="icon"/>
             <link href="/manifest.json" rel="manifest"/>
             <link href="https://fonts.googleapis.com" rel="preconnect"/>
