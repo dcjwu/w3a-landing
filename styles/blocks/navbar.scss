@@ -160,6 +160,7 @@
     }
     @include breakpoint($bp-576) {
       margin-top: $nav-height-576;
+      height: calc(100vh - #{$nav-height-576});
       width: 100%;
     }
     @include breakpoint-vertical($bp-665) {
