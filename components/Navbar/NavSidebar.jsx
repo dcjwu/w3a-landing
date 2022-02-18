@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react"
 import classNames from "classnames"
 import Image from "next/image"
 
-import logo from "../../assets/images/logo.svg"
+import logo from "../../assets/images/logo-full-new2.svg"
 import NavLinks from "./NavLinks"
 
 const NavSidebar = ({ burgerMenuActive, setBurgerMenuActive }) => {
