@@ -207,9 +207,12 @@
       .contact-b {
         .item {
           @include contact-item-style;
-          font-size: 1.8rem;
-          @include breakpoint($bp-576) {
-            font-size: 1.5rem;
+          font-size: 0;
+          span {
+            font-size: 1.8rem;
+            @include breakpoint($bp-576) {
+              font-size: 1.5rem;
+            }
           }
           svg {
             @include breakpoint($bp-576) {

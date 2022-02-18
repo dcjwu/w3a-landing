@@ -32,7 +32,7 @@ const Modal = ({ showModal, setShowModal, handleShowModal }) => {
    }, [showModal, isSuccess])
 
    return (
-      <div ref={outsideClickRef} aria-hidden="true" className={`modal-win${showModal ? " view" : " close"}`}
+      <div ref={outsideClickRef} className={`modal-win${showModal ? " view" : ""}`}
            tabIndex="-1">
          <div className="modal__header">
             <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" onClick={() => handleShowModal()}>

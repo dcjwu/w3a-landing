@@ -32,8 +32,12 @@
     .contact-b {
       .item {
         @include contact-item-style;
-        @include breakpoint($bp-400) {
-          font-size: 2rem;
+        font-size: 0;
+        span {
+          font-size: 2.2rem;
+          @include breakpoint($bp-400) {
+            font-size: 2rem;
+          }
         }
       }
     }
