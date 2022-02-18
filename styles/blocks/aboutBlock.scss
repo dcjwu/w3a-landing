@@ -94,11 +94,14 @@
         color: $highlight-color;
       }
       p {
-        margin-top: 1rem;
-        font-size: 2rem;
+        margin-top: 1.5rem;
+        font-size: 1.7rem;
         transition: color .2s linear;
+        @include breakpoint($bp-767) {
+          font-size: 1.6rem;
+        }
         @include breakpoint($bp-576) {
-          font-size: 1.8rem;
+          font-size: 1.5rem;
         }
       }
     }
