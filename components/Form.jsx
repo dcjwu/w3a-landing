@@ -58,11 +58,10 @@ const Form = ({ title, clearModalForm, showModal, setIsSuccess }) => {
                   setLoading(false)
                }
             })
-            .catch((err) => {
+            .catch(() => {
                setError("Something went wrong.")
                setSuccess("")
                setLoading(false)
-               console.log(err)
             })
       }
    }

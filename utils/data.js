@@ -1,14 +1,14 @@
 export const solutionsCardInfo = [
    {
-      heading: "Smart contracts",
-      text: "ETH, EOS, TRON, and other blockchains smart contract development and audition."
+      heading: "DApps",
+      text: "Develop peer to peer Decentralised Applications for any possible industry. We know how to convert ideas into DApps that can bring security and transparency to your business ecosystem."
    },
    {
-      heading: "Crypto wallets",
-      text: "Crypto wallet creation for any platform, feature or currency, favouring client's needs."
+      heading: "Node",
+      text: "Become a pillar and a part of the blockchain. We can help set up your own nodes and keep it up to date."
    },
    {
-      heading: "DeFi",
-      text: "Development of assets tokenization platforms, P2P lending or Neobanks."
+      heading: "API Services",
+      text: "We build any kind of specific and blockchain-related APIs that can be integrated and used by any other business."
    }
 ]
