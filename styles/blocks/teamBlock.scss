@@ -11,6 +11,15 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+    @include breakpoint($bp-991) {
+      width: 100%;
+      justify-content: space-between;
+    }
+    @include breakpoint($bp-767) {
+      justify-content: center;
+      gap: 2rem;
+    }
 
     .member {
       transition: color .2s ease-in-out;
@@ -20,6 +29,10 @@
           img {
             filter: none;
             clip-path: none;
+            @include breakpoint($bp-991) {
+              width: 20rem;
+              height: 20rem;
+            }
           }
         }
         & .info-wrapper {
@@ -31,6 +44,10 @@
         width: 25rem;
         height: 25rem;
         transition: clip-path .2s ease-in-out;
+        @include breakpoint($bp-991) {
+          width: 20rem;
+          height: 20rem;
+        }
 
         img {
           filter: grayscale(100%);
@@ -49,11 +66,17 @@
         text-align: center;
         color: $highlight-color;
         font-size: 2.4rem;
+        @include breakpoint($bp-991) {
+          font-size: 2rem;
+        }
       }
 
       .member__role {
         font-family: $font-text;
         text-align: center;
+        @include breakpoint($bp-991) {
+          font-size: 2rem;
+        }
         &:last-child {
           margin-top: 1rem;
           font-size: 1.8rem;
