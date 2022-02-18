@@ -32,7 +32,7 @@ export default function Home() {
             <meta content="Web3App Agency | High Quality Blockchain Development" name="twitter:title"/>
             <meta content="Web3App Agency is a custom software development company that delivers top-level solutions"
                   name="twitter:description"/>
-            <meta content="https://web3app.agency/icon/icon-big.png" name="twitter:image"/>
+            <meta content="https://web3app.agency/icon/facebook-icon.png" name="twitter:image"/>
          </Head>
 
 
