@@ -5,11 +5,13 @@
 @import "blocks/navbar";
 @import "./blocks/headerBlock";
 @import "./blocks/aboutBlock";
+@import "./blocks/teamBlock";
 @import "./blocks/contact-usBlock";
 @import "./blocks/footer";
 
-#services,
-#contact-us {
+#solutions,
+#contact-us,
+#team {
   position: absolute;
   top: -$nav-height;
   left: 0;

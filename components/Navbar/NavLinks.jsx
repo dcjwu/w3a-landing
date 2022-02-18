@@ -7,8 +7,8 @@ const NavLinks = ({ handleClickInside }) => {
             </a>
          </li>
          <li>
-            <a href="#services" onClick={handleClickInside}>
-               Services
+            <a href="#solutions" onClick={handleClickInside}>
+               Solutions
             </a>
          </li>
          <li>
