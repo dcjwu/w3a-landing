@@ -18,9 +18,11 @@ const HeaderBlock = () => {
                   <ButtonAction type="button" onClick={() => handleShowModal()}>
                      Contact us
                   </ButtonAction>
-                  <ButtonAction type="button">
-                     Presentation
-                  </ButtonAction>
+                  <a download href="/Web3App.Agency_Presentation.pdf">
+                     <ButtonAction type="button">
+                        Presentation
+                     </ButtonAction>
+                  </a>
                </div>
                <p className="header__about">
                   We develop high-quality blockchain software, provide maintenance, and guarantee the quality of our work. Our
