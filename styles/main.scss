@@ -91,6 +91,9 @@
     @include breakpoint($bp-576) {
       font-size: 1.7rem;
     }
+    @include breakpoint($bp-400) {
+      font-size: 1.5rem;
+    }
     &.left {
       text-align: left;
     }
