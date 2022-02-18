@@ -1,11 +1,11 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 import axios from "axios"
 
 import ButtonAction from "./_UI/ButtonAction"
 import Spinner from "./_UI/Spinner"
 
-const Form = ({ title }) => {
+const Form = ({ title, clearModalForm, showModal, setIsSuccess }) => {
    const [name, setName] = useState("")
    const [email, setEmail] = useState("")
    const [message, setMessage] = useState("")
@@ -17,6 +17,12 @@ const Form = ({ title }) => {
    const [error, setError] = useState("")
    const [success, setSuccess] = useState("")
    const [loading, setLoading] = useState(false)
+
+   useEffect(() => {
+      if (showModal && success) {
+         clearModalForm(setSuccess)
+      }
+   }, [showModal])
 
    const handleSubmit = e => {
       e.preventDefault()
@@ -44,6 +50,7 @@ const Form = ({ title }) => {
                   setMessage("")
                   setError("")
                   setLoading(false)
+                  setIsSuccess(true)
                } else {
                   setError("Unexpected Error.")
                   setLoading(false)

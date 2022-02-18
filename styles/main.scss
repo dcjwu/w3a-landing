@@ -1,4 +1,5 @@
 @import "./vendor/vars";
+@import "./vendor/mixins";
 @import "./vendor/reset";
 @import "./blocks/form";
 @import "blocks/underConstruction";
@@ -8,6 +9,7 @@
 @import "./blocks/teamBlock";
 @import "./blocks/contact-usBlock";
 @import "./blocks/footer";
+@import "./blocks/modal";
 
 #solutions,
 #contact-us,

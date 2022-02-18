@@ -1,7 +1,12 @@
+import { useState } from "react"
+
 import BlockSupheader from "./_UI/BlockSupheader"
 import ButtonAction from "./_UI/ButtonAction"
+import Modal from "./Modal"
 
 const HeaderBlock = () => {
+   const [showModal, setShowModal] = useState(false)
+   const handleShowModal = () => setShowModal(prevState => !prevState)
 
    return (
       <div className="header" id="home">
@@ -10,7 +15,7 @@ const HeaderBlock = () => {
             <h1 className="header__heading">Web3App<span> .Agency</span></h1>
             <div className="header__image">
                <div className="header__buttons">
-                  <ButtonAction type="button">
+                  <ButtonAction type="button" onClick={() => handleShowModal()}>
                      Contact us
                   </ButtonAction>
                   <ButtonAction type="button">
@@ -25,6 +30,7 @@ const HeaderBlock = () => {
                </p>
             </div>
          </div>
+         <Modal handleShowModal={handleShowModal} setShowModal={setShowModal} showModal={showModal}/>
       </div>
    )
 }
