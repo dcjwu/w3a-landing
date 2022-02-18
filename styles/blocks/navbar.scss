@@ -162,6 +162,9 @@
       margin-top: $nav-height-576;
       width: 100%;
     }
+    @include breakpoint-vertical($bp-665) {
+      overflow-y: scroll;
+    }
 
     &.active {
       transform: translateX(0);

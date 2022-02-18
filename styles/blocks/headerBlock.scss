@@ -66,5 +66,8 @@
     @include breakpoint($bp-576) {
       font-size: 1.8rem;
     }
+    @include breakpoint($bp-300) {
+      font-size: 1.7rem;
+    }
   }
 }

@@ -7,6 +7,7 @@ import ContactUsBlock from "../components/Contact-usBlock"
 import Footer from "../components/Footer"
 import HeaderBlock from "../components/HeaderBlock"
 import Navbar from "../components/Navbar/Navbar"
+import TeamBlock from "../components/Team/TeamBlock"
 
 export default function Home() {
 
@@ -31,6 +32,7 @@ export default function Home() {
          <div className="container">
             <HeaderBlock/>
             <AboutBlock/>
+            <TeamBlock/>
             <ContactUsBlock/>
             {/*<UnderConstruction/>*/}
          </div>

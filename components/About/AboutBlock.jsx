@@ -1,5 +1,5 @@
 import { solutionsCardInfo } from "../../utils/data"
-import data from "../../utils/data.json"
+import data from "../../utils/stack.json"
 import BlockHeader from "../_UI/BlockHeader"
 import SolutionsCard from "./SolutionsCard"
 import Stack from "./Stack/Stack"
@@ -9,7 +9,7 @@ const AboutBlock = () => {
    
    return (
       <div className="about">
-         <div id="services"/>
+         <div id="solutions"/>
          <BlockHeader>
             Solutions
          </BlockHeader>
