@@ -14,7 +14,6 @@ const NavSidebar = ({ burgerMenuActive, setBurgerMenuActive }) => {
             setBurgerMenuActive(false)
          }
       }
-      console.log()
       document.addEventListener("click", checkIfClickedOutside)
       return () => {
          document.removeEventListener("click", checkIfClickedOutside)

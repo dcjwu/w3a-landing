@@ -10,8 +10,6 @@ const Modal = ({ showModal, setShowModal, handleShowModal }) => {
       setIsSuccess(false)
    }
 
-   console.log(isSuccess)
-
    useEffect(() => {
       if (showModal) {
          document.body.style.overflow = "hidden"
@@ -27,7 +25,6 @@ const Modal = ({ showModal, setShowModal, handleShowModal }) => {
             setShowModal(false)
          }
       }
-      console.log()
       document.addEventListener("click", checkIfClickedOutside)
       return () => {
          document.removeEventListener("click", checkIfClickedOutside)

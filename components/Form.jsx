@@ -50,16 +50,19 @@ const Form = ({ title, clearModalForm, showModal, setIsSuccess }) => {
                   setMessage("")
                   setError("")
                   setLoading(false)
-                  setIsSuccess(true)
+                  if (setIsSuccess) {
+                     setIsSuccess(true)
+                  }
                } else {
                   setError("Unexpected Error.")
                   setLoading(false)
                }
             })
-            .catch(() => {
+            .catch((err) => {
                setError("Something went wrong.")
                setSuccess("")
                setLoading(false)
+               console.log(err)
             })
       }
    }
