@@ -83,13 +83,6 @@ const Form = ({ title, clearModalForm, showModal, setIsSuccess }) => {
             <textarea className="form-control" placeholder="Message" value={message}
                          onChange={onMessageChange}/>
          </div>
-         {/*<button className="btn" disabled={loading} type="submit">*/}
-         {/*   {*/}
-         {/*      loading*/}
-         {/*         ? <Spinner height={15} width={45}/>*/}
-         {/*         : "Send"*/}
-         {/*   }*/}
-         {/*</button>*/}
          <ButtonAction disabled={loading} type="submit" >
             {
                loading 

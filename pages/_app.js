@@ -14,7 +14,10 @@ function MyApp({ Component, pageProps }) {
    return (
       <>
          <Head>
+            <meta content="#333333" name="theme-color"/>
+            <link href="/icon-180x180.png" rel="apple-touch-icon"/>
             <link href="/favicon.ico" rel="icon"/>
+            <link href="/manifest.json" rel="manifest"/>
             <link href="https://fonts.googleapis.com" rel="preconnect"/>
             <link crossOrigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&family=Source+Code+Pro:wght@300;400;500;700&display=swap"
