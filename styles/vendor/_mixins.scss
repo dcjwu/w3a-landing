@@ -8,6 +8,14 @@
 
 }
 
+@mixin breakpoint-vertical($bp) {
+
+  @media screen and (max-height: $bp) {
+    @content;
+  }
+
+}
+
 @mixin link-styles {
   position: relative;
   transition: color .2s linear;
