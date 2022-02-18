@@ -25,9 +25,7 @@ export default function Home() {
             <meta content="website" property="og:type"/>
             <meta content="Web3App Agency is a custom software development company that delivers top-level solutions"
                   property="og:description"/>
-            <meta content="/icon/icon-big.png" property="og:image" />
-            <meta content="150" property="og:image:width" />
-            <meta content="150" property="og:image:height" />
+            <meta content="https://web3app.agency/icon/icon-big.png" property="og:image" />
          </Head>
 
 
