@@ -24,8 +24,10 @@
       gap: 1.5rem;
     }
     .image__wrapper {
-      height: 30rem;
-      width: 25rem;
+      @include breakpoint($bp-767) {
+        height: 30rem;
+        width: 25rem;
+      }
     }
   }
   &__text {

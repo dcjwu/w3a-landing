@@ -117,6 +117,16 @@
       "link": "https://cardano.org/"
     },
     {
+      "name": "Solana",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/sol.svg",
+      "link": "https://solana.com/"
+    },
+    {
+      "name": "Avalanche",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/avax.svg",
+      "link": "https://avax.network/"
+    },
+    {
       "name": "Terra",
       "icon": "http://avsdata.beget.tech/images/tech-stack/luna.svg",
       "link": "https://www.terra.money/"
