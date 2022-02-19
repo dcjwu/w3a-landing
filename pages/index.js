@@ -42,7 +42,6 @@ export default function Home() {
             <AboutBlock/>
             <TeamBlock/>
             <ContactUsBlock/>
-            {/*<UnderConstruction/>*/}
          </div>
          <Footer/>
       </>
