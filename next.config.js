@@ -9,6 +9,7 @@ module.exports = withPWA({
    },
    pwa: {
       dest: "public",
-      register: true
+      register: true,
+      fallbacks: { document: "/_offline" }
    }
 })
