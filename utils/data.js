@@ -1,5 +1,14 @@
 export const solutionsCardInfo = [
    {
+      heading: "Smart Contacts",
+      text: "Ethereum, BSC, Solana, Avalanche and other blockchains smart contract development."
+   },
+   {
+      heading: "DeFi",
+      text: "Development of any blockchain based financial solutions, e.g. assets tokenization platforms, P2P," +
+         " Neobanks."
+   },
+   {
       heading: "DApps",
       text: "Develop peer to peer Decentralised Applications for any possible industry. We know how to convert ideas into DApps that can bring security and transparency to your business ecosystem."
    },
@@ -10,5 +19,11 @@ export const solutionsCardInfo = [
    {
       heading: "API Services",
       text: "We build any kind of specific and blockchain-related APIs that can be integrated and used by any other business."
+   },
+   {
+      heading: "Cryptowallets",
+      text: "We are well-versed in cryptowallets creation, for any currencies, with any features," +
+         " favouring" +
+         " client's needs."
    }
 ]
