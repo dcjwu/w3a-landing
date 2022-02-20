@@ -12,94 +12,93 @@
 @import "./blocks/modal";
 @import "./blocks/404";
 @import "./blocks/offline";
-
 #solutions,
 #contact-us,
 #team {
-  position: absolute;
-  top: -$nav-height;
-  left: 0;
-  @include breakpoint($bp-576) {
-    top: -$nav-height-576;
-  }
+    position: absolute;
+    top: -$nav-height;
+    left: 0;
+    @include breakpoint($bp-576) {
+        top: -$nav-height-576;
+    }
 }
 
 @font-face {
-  font-family: 'Astro Space';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../assets/fonts/Astro-Space.ttf.woff") format('woff');
+    font-family: 'ChakraPetch';
+    font-style: normal;
+    font-weight: normal;
+    src: url("/fonts/ChakraPetch-Medium.ttf");
 }
 
 .button-action {
-  color: #fff;
-  cursor: pointer;
-  font-size: 2.2rem;
-  line-height: 4.5rem;
-  width: 20rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  @include breakpoint($bp-576) {
-    font-size: 2rem;
-  }
-  &.effect {
-    background: lighten($bg-color, 3%);
-    border: 1px solid darken($bg-color, 4%);
-    box-shadow: 0 2px 0 darken($bg-color, 5%), 2px 4px 6px darken($bg-color, 2%);
-    letter-spacing: 1px;
-    transition: all 150ms linear;
-    &:disabled:hover {
-      pointer-events: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.2rem;
+    line-height: 4.5rem;
+    width: 20rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    @include breakpoint($bp-576) {
+        font-size: 2rem;
     }
-    &:hover {
-      background: darken($bg-color, 1.5%);
-      border: 1px solid rgba(#000, .05);
-      color: lighten($bg-color, 18%);
-      text-decoration: none;
-      text-shadow: -1px -1px 0 darken($bg-color, 9.5%);
-      transition: all 250ms linear;
+    &.effect {
+        background: lighten($bg-color, 3%);
+        border: 1px solid darken($bg-color, 4%);
+        box-shadow: 0 2px 0 darken($bg-color, 5%), 2px 4px 6px darken($bg-color, 2%);
+        letter-spacing: 1px;
+        transition: all 150ms linear;
+        &:disabled:hover {
+            pointer-events: none;
+        }
+        &:hover {
+            background: darken($bg-color, 1.5%);
+            border: 1px solid rgba(#000, .05);
+            color: lighten($bg-color, 18%);
+            text-decoration: none;
+            text-shadow: -1px -1px 0 darken($bg-color, 9.5%);
+            transition: all 250ms linear;
+        }
     }
-  }
 }
 
 .custom {
-  &__header {
-    margin-bottom: 1rem;
-    font-family: $font-heading;
-    font-weight: $font-bold;
-    font-size: 9rem;
-    text-align: left;
-    //text-transform: uppercase;
-    @include breakpoint($bp-576) {
-      font-size: 6rem;
+    &__header {
+        margin-bottom: 1rem;
+        font-family: $font-heading;
+        font-weight: $font-bold;
+        font-size: 9rem;
+        text-align: left;
+        //text-transform: uppercase;
+        @include breakpoint($bp-576) {
+            font-size: 6rem;
+        }
+        @include breakpoint($bp-300) {
+            font-size: 4.5rem;
+        }
+        span {
+            color: $highlight-color;
+        }
     }
-    @include breakpoint($bp-300) {
-      font-size: 4.5rem;
+    &__subheader {
+        margin-bottom: 1rem;
+        font-family: $font-heading;
+        font-weight: $font-bold;
+        font-size: 4rem;
+        text-align: left;
     }
-    span {
-      color: $highlight-color;
+    &__supheader {
+        font-family: $font-text;
+        text-align: right;
+        color: rgba($main-color, .4);
+        text-transform: lowercase;
+        @include breakpoint($bp-576) {
+            font-size: 1.7rem;
+        }
+        @include breakpoint($bp-400) {
+            font-size: 1.5rem;
+        }
+        &.left {
+            text-align: left;
+        }
     }
-  }
-  &__subheader {
-    margin-bottom: 1rem;
-    font-family: $font-heading;
-    font-weight: $font-bold;
-    font-size: 4rem;
-    text-align: left;
-  }
-  &__supheader {
-    font-family: $font-text;
-    text-align: right;
-    color: rgba($main-color, .4);
-    text-transform: lowercase;
-    @include breakpoint($bp-576) {
-      font-size: 1.7rem;
-    }
-    @include breakpoint($bp-400) {
-      font-size: 1.5rem;
-    }
-    &.left {
-      text-align: left;
-    }
-  }
 }
