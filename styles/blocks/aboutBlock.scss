@@ -11,27 +11,24 @@
     margin-bottom: 8rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2rem;
     flex-wrap: wrap;
-    @include breakpoint($bp-767) {
-      justify-content: center;
-      gap: 2rem 4rem;
-    }
     & .solution {
       padding: 2rem;
       flex: 0 0 32%;
-      height: 40rem;
+      height: 34rem;
       //background: linear-gradient(90deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 12%, 1) 100%);
       background-color: hsla(0, 0%, 12%, 1);
       @include breakpoint($bp-991) {
-        height: 45rem;
+        height: 34rem;
       }
       @include breakpoint($bp-767) {
         flex: 0 0 45%;
       }
       @include breakpoint($bp-576) {
         flex: 0 0 100%;
-        height: 28rem;
+        height: 25rem;
       }
       h4 {
         text-align: left;
@@ -46,7 +43,6 @@
         border-bottom: 1px solid $highlight-color;
       }
       p {
-        font-family: $font-text;
         font-size: 2rem;
         @include breakpoint($bp-991) {
           font-size: 1.8rem;
