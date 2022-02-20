@@ -24,13 +24,6 @@
   }
 }
 
-@font-face {
-  font-family: 'Astro Space';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../assets/fonts/Astro-Space.ttf.woff") format('woff');
-}
-
 .button-action {
   color: #fff;
   cursor: pointer;
@@ -65,7 +58,6 @@
 .custom {
   &__header {
     margin-bottom: 1rem;
-    font-family: $font-heading;
     font-weight: $font-bold;
     font-size: 9rem;
     text-align: left;
@@ -82,7 +74,6 @@
   }
   &__subheader {
     margin-bottom: 1rem;
-    font-family: $font-heading;
     font-weight: $font-bold;
     font-size: 4rem;
     text-align: left;
