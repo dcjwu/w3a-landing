@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
             <link href="/favicon.ico" rel="icon"/>
             <link href="/manifest.json" rel="manifest"/>
             <link href="https://fonts.googleapis.com" rel="preconnect"/>
-            <link crossOrigin href="https://fonts.gstatic.com" rel="preconnect"/>
+            <link crossOrigin="true" href="https://fonts.gstatic.com" rel="preconnect"/>
             <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;700&family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400;500&family=Source+Code+Pro:wght@300;400;500&display=swap"
                      rel="stylesheet"/>
          </Head>

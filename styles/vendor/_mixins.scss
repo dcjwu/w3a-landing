@@ -55,7 +55,6 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  font-family: $font-text;
   transition: color .2s ease-in-out;
   &:hover {
     color: $highlight-color;
