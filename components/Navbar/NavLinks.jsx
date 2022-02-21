@@ -17,6 +17,11 @@ const NavLinks = ({ handleClickInside }) => {
             </a>
          </li>
          <li>
+            <a href="#partners" onClick={handleClickInside}>
+               Partners
+            </a>
+         </li>
+         <li>
             <a href="#contact-us" onClick={handleClickInside}>
                Contact us
             </a>

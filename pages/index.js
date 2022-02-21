@@ -7,6 +7,7 @@ import ContactUsBlock from "../components/Contact-usBlock"
 import Footer from "../components/Footer"
 import HeaderBlock from "../components/HeaderBlock"
 import Navbar from "../components/Navbar/Navbar"
+import PartnersBlock from "../components/PartnersBlock"
 import TeamBlock from "../components/Team/TeamBlock"
 
 export default function Home() {
@@ -35,12 +36,12 @@ export default function Home() {
             <meta content="https://web3app.agency/icon/facebook-icon.png" name="twitter:image"/>
          </Head>
 
-
          <Navbar/>
          <div className="container">
             <HeaderBlock/>
             <AboutBlock/>
             <TeamBlock/>
+            <PartnersBlock/>
             <ContactUsBlock/>
          </div>
          <Footer/>
