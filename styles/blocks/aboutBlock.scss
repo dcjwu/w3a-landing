@@ -20,6 +20,9 @@
       height: 34rem;
       //background: linear-gradient(90deg, hsla(0, 0%, 8%, 1) 0%, hsla(0, 0%, 12%, 1) 100%);
       background-color: hsla(0, 0%, 12%, 1);
+      &:hover h4 {
+        color: $highlight-color;
+      }
       @include breakpoint($bp-991) {
         height: 34rem;
       }
@@ -34,6 +37,7 @@
         text-align: left;
         font-size: 3rem;
         text-transform: capitalize;
+        transition: color .3s ease-in-out;
         @include breakpoint($bp-991) {
           font-size: 2.2rem;
         }

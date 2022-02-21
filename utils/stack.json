@@ -1,6 +1,16 @@
 {
   "languages": [
     {
+      "name": "Python",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/python.svg",
+      "link": "https://www.python.org/"
+    },
+    {
+      "name": "Rust",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/rust.svg",
+      "link": "https://www.rust-lang.org/"
+    },
+    {
       "name": "PHP",
       "icon": "http://avsdata.beget.tech/images/tech-stack/php.svg",
       "link": "https://www.php.net/"
@@ -112,11 +122,6 @@
       "link": "https://www.bnbchain.world/en/smartChain"
     },
     {
-      "name": "Cardano",
-      "icon": "http://avsdata.beget.tech/images/tech-stack/ada.svg",
-      "link": "https://cardano.org/"
-    },
-    {
       "name": "Solana",
       "icon": "http://avsdata.beget.tech/images/tech-stack/sol.svg",
       "link": "https://solana.com/"
@@ -152,14 +157,29 @@
       "link": "https://tron.network/"
     },
     {
+      "name": "Algorand",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/algo.svg",
+      "link": "https://www.algorand.com/"
+    },
+    {
       "name": "Hedera",
       "icon": "http://avsdata.beget.tech/images/tech-stack/hbar.svg",
       "link": "https://www.hedera.com/"
     },
     {
+      "name": "Tezos",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/xtz.svg",
+      "link": "https://www.tezos.com/"
+    },
+    {
       "name": "EOS",
       "icon": "http://avsdata.beget.tech/images/tech-stack/eos.svg",
       "link": "https://eos.io/"
+    },
+    {
+      "name": "Cronos",
+      "icon": "http://avsdata.beget.tech/images/tech-stack/cronos.svg",
+      "link": "https://cronos.org/"
     }
   ]
 }
