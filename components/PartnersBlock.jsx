@@ -13,8 +13,9 @@ const PartnersBlock = () => {
          <div className="partners__wrapper">
             <div className="partners__item">
                <a href="https://capscoin.io/" rel="noreferrer" target="_blank">
-                  <Image alt="CapsCoin" quality={100}
-                         src={capsCoin}/>
+                  <Image alt="CapsCoin" height={200} quality={100}
+                         src={capsCoin}
+                         width={200}/>
                </a>
             </div>
          </div>
