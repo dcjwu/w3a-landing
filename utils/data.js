@@ -1,6 +1,6 @@
 export const solutionsCardInfo = [
    {
-      heading: "Smart Contacts",
+      heading: "Smart Contracts",
       text: "Ethereum, BSC, Solana, Avalanche and other blockchains smart contract development."
    },
    {
