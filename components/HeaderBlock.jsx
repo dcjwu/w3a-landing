@@ -18,9 +18,9 @@ const HeaderBlock = () => {
                   <ButtonAction type="button" onClick={() => handleShowModal()}>
                      Contact us
                   </ButtonAction>
-                  <a download href="/Web3App.Agency_Presentation.pdf">
+                  <a target="_blank" href="https://calendly.com/artjoms-jurkevics/15min">
                      <ButtonAction type="button">
-                        Presentation
+                        {"Let's talk about your idea"}
                      </ButtonAction>
                   </a>
                </div>
