@@ -18,7 +18,7 @@ const HeaderBlock = () => {
                   <ButtonAction type="button" onClick={() => handleShowModal()}>
                      Contact us
                   </ButtonAction>
-                  <a target="_blank" href="https://calendly.com/artjoms-jurkevics/15min">
+                  <a rel="noopener noreferrer" target="_blank" href="https://calendly.com/artjoms-jurkevics/15min">
                      <ButtonAction type="button">
                         {"Book A Call"}
                      </ButtonAction>
