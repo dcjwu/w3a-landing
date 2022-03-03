@@ -20,7 +20,7 @@ const HeaderBlock = () => {
                   </ButtonAction>
                   <a target="_blank" href="https://calendly.com/artjoms-jurkevics/15min">
                      <ButtonAction type="button">
-                        {"Let's talk about your idea"}
+                        {"Book A Call"}
                      </ButtonAction>
                   </a>
                </div>
