@@ -4,6 +4,7 @@ import "../styles/main.scss"
 import { useEffect } from "react"
 
 import Head from "next/head"
+import { Helmet } from "react-helmet"
 
 function MyApp({ Component, pageProps }) {
    useEffect(() => {
@@ -22,7 +23,7 @@ function MyApp({ Component, pageProps }) {
             <link href="https://fonts.googleapis.com" rel="preconnect"/>
             <link crossOrigin="true" href="https://fonts.gstatic.com" rel="preconnect"/>
             <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;700&family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400;500&family=Source+Code+Pro:wght@300;400;500&display=swap"
-                     rel="stylesheet"/>
+               rel="stylesheet"/>
          </Head>
          <Component {...pageProps}/>
       </>

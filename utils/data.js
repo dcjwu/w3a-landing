@@ -22,6 +22,7 @@ export const solutionsCardInfo = [
    },
    {
       heading: "Blockchain Consulting",
-      text: "We can help you apply analytics throughout your organization to grow, protect and optimize your business by harnessing the latest advanced technologies. The true value lies in embedding analytics deeply into business processes at the point where decisions are made – by human beings."
+      text: "We provide consulting services on the implementation of the leading innovatory blockchain technologies" +
+         " in order to expand your capabilities and income."
    }
 ]
