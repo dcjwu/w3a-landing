@@ -1,7 +1,7 @@
 export const solutionsCardInfo = [
    {
       heading: "Smart Contracts",
-      text: "Ethereum, BSC, Solana, Avalanche and other blockchains smart contract development."
+      text: "Ethereum, BSC, Solana, Avalanche and other blockchains smart contract development and audit."
    },
    {
       heading: "DeFi",
@@ -21,9 +21,7 @@ export const solutionsCardInfo = [
       text: "We build any kind of specific and blockchain-related APIs that can be integrated and used by any other business."
    },
    {
-      heading: "Cryptowallets",
-      text: "We are well-versed in cryptowallets creation, for any currencies, with any features," +
-         " favouring" +
-         " client's needs."
+      heading: "Blockchain Consulting",
+      text: "We can help you apply analytics throughout your organization to grow, protect and optimize your business by harnessing the latest advanced technologies. The true value lies in embedding analytics deeply into business processes at the point where decisions are made – by human beings."
    }
 ]
