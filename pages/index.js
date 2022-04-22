@@ -15,23 +15,23 @@ export default function Home() {
    return (
       <>
          <Head>
-            <title>Web3App Agency | High Quality Blockchain Development</title>
+            <title>Web3App Agency | Blockchain Software Development Company</title>
             <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0"
                   name="viewport"/>
             <meta charSet="utf-8"/>
             <meta content="en" httpEquiv="content-language"/>
-            <meta content="Web3App Agency is a custom software development company that delivers top-level solutions"
+            <meta content="Web3App Agency is a custom software development company that delivers top-level blockchain solutions"
                   name="description"/>
-            <meta content="High Quality Blockchain Development" property="og:title"/>
+            <meta content="Blockchain Software Development Company" property="og:title"/>
             <meta content="website" property="og:type"/>
-            <meta content="Web3App Agency is a custom software development company that delivers top-level solutions"
+            <meta content="Web3App Agency is a custom software development company that delivers top-level blockchain solutions"
                   property="og:description"/>
             <meta content="https://web3app.agency/icon/icon-big.png" property="og:image:secure_url"/>
             <meta content="https://web3app.agency/icon/facebook-icon.png" property="og:image"/>
             <meta content="image/png" property="og:image:type"/>
             <meta content="summary_large_image" name="twitter:card"/>
-            <meta content="Web3App Agency | High Quality Blockchain Development" name="twitter:title"/>
-            <meta content="Web3App Agency is a custom software development company that delivers top-level solutions"
+            <meta content="Web3App Agency | Blockchain Software Development Company" name="twitter:title"/>
+            <meta content="Web3App Agency is a custom blockchain software development company that delivers top-level blockchain solutions"
                   name="twitter:description"/>
             <meta content="https://web3app.agency/icon/facebook-icon.png" name="twitter:image"/>
          </Head>
