@@ -14,7 +14,7 @@ const Footer = () => {
                         </svg>
                         Linkedin
                      </a>
-                     <a href="https://telegram.me/barcafan95" rel="noreferrer" target="_blank">
+                     <a href="https://telegram.me/ArtyomWeb3" rel="noreferrer" target="_blank">
                         <svg viewBox="0 0 496 512"
                              xmlns="http://www.w3.org/2000/svg">
                            <path
