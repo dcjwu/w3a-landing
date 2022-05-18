@@ -26,6 +26,20 @@
   }
 }
 
+.partners__item {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+
+  @include breakpoint($bp-576) {
+    flex-direction: column;
+  }
+
+  img {
+    object-fit: contain;
+  }
+}
+
 .button-action {
   color: #fff;
   cursor: pointer;
