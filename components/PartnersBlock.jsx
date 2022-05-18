@@ -13,12 +13,12 @@ const PartnersBlock = () => {
          </BlockHeader>
          <div className="partners__wrapper">
             <div className="partners__item">
-               <a href="https://capscoin.io/" rel="noreferrer" target="_blank">
+               <a href="https://capscoin.io/" target="_blank">
                   <Image alt="CapsCoin" height={200} quality={100}
                          src={capsCoin}
                          width={200}/>
                </a>
-               <a href="http://welaunch.tech/" rel="noreferrer" target="_blank">
+               <a href="http://welaunch.tech/" target="_blank">
                    <Image alt="welaunch" height={200} quality={100}
                           src={weLaunch}
                           width={400}/>
