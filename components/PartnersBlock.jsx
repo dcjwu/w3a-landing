@@ -1,6 +1,7 @@
 import Image from "next/image"
 
 import capsCoin from "../assets/images/caps-coin.webp"
+import weLaunch from "../assets/images/welaunch.png"
 import BlockHeader from "./_UI/BlockHeader"
 
 const PartnersBlock = () => {
@@ -16,6 +17,11 @@ const PartnersBlock = () => {
                   <Image alt="CapsCoin" height={200} quality={100}
                          src={capsCoin}
                          width={200}/>
+               </a>
+               <a href="http://welaunch.tech/" rel="noreferrer" target="_blank">
+                   <Image alt="welaunch" height={200} quality={100}
+                          src={weLaunch}
+                          width={200}/>
                </a>
             </div>
          </div>
