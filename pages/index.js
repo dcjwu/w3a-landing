@@ -41,7 +41,6 @@ export default function Home() {
             <HeaderBlock/>
             <AboutBlock/>
             <TeamBlock/>
-            <PartnersBlock/>
             <ContactUsBlock/>
          </div>
          <Footer/>
