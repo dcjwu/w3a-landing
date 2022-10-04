@@ -1,0 +1,36 @@
+@import "src/assets/styles/constants";
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  background-color: $color-background-grey;
+  border-radius: 2.4rem;
+  bottom: 1.6rem;
+  left: 50%;
+  padding: 3.2rem;
+  position: fixed;
+  transform: translateX(-50%);
+  width: 45rem;
+  z-index: 999;
+
+  @include breakpoint-max($bp-screen-smd) {
+    width: calc(85vw - 6.4rem);
+  }
+}
+
+.button {
+  align-items: center;
+  display: flex;
+  gap: 1.6rem;
+  justify-content: center;
+  margin-top: 3.2rem;
+
+  @include breakpoint-max($bp-screen-smd) {
+    flex-direction: column;
+  }
+
+  button:first-child {
+    background-color: $color-background-grey;
+    border: 1px solid $color-grey-1000;
+    color: $color-grey-1000;
+  }
+}

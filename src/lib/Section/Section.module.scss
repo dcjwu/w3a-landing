@@ -1,0 +1,51 @@
+@import "src/assets/styles/constants";
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  max-width: $screen-max-width;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    max-width: 38ch;
+  }
+
+  &.titleLeft {
+    .title {
+      margin: 0;
+    }
+  }
+}
+
+.title {
+  width: fit-content;
+  margin: 0 auto 8rem;
+
+  @include breakpoint-max($bp-screen-md) {
+    margin-bottom: 4.8rem;
+  }
+}
+
+.section {
+  padding: 12.8rem 3.2rem;
+  @include breakpoint-max($bp-screen-md) {
+    padding-top: 8.8rem;
+    padding-bottom: 8.8rem;
+  }
+}
+
+.white {
+  background-color: $color-background-grey;
+}
+
+.black {
+  background-color: $color-grey-1000;
+}
+
+.fullScreen {
+  height: calc(100vh - 25.6rem);
+
+  @include breakpoint-max($bp-screen-md) {
+    height: calc(100vh - 17.6rem);
+  }
+}

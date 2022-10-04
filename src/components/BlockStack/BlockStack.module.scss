@@ -1,0 +1,44 @@
+@import "src/assets/styles/constants";
+@import "src/assets/styles/mixins";
+
+.block {
+
+  align-items: center;
+  display: grid;
+  gap: .8rem 3.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(212px, 1fr));
+
+  @include breakpoint-max($bp-screen-md) {
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  }
+}
+
+.item {
+  border-bottom: 1px solid $color-grey-300;
+  display: grid;
+  justify-items: center;
+  transition: border-bottom .3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $color-grey-1000;
+  }
+}
+
+.itemWrapper {
+  align-items: center;
+  display: grid;
+  gap: 1.6rem;
+  grid-template-columns: 0fr 1fr;
+  padding: 4.2rem;
+
+  @include breakpoint-max($bp-screen-md) {
+    padding: 2.4rem;
+  }
+}
+
+.image {
+  height: 2.4rem;
+  position: relative;
+  width: 2.4rem;
+}

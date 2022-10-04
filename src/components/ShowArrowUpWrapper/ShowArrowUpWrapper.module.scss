@@ -1,0 +1,24 @@
+@import "src/assets/styles/constants";
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  + div {
+    bottom: 8rem;
+    position: fixed;
+    right: 12rem;
+    transform: translateX(30vw);
+    transition: transform .2s ease-in-out;
+    z-index: 8;
+
+    @include breakpoint-max($bp-screen-md) {
+      right: 3.2rem;
+    }
+  }
+
+  &.show {
+    + div {
+      transform: translateX(0);
+    }
+  }
+}
+

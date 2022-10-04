@@ -1,0 +1,36 @@
+@import "src/assets/styles/constants";
+@import "src/assets/styles/mixins";
+
+.block {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr .7fr .7fr;
+
+  @include breakpoint-max($bp-screen-lg) {
+    grid-template-columns: 1fr .6fr .6fr;
+  }
+
+  @include breakpoint-max($bp-screen-md) {
+    align-items: initial;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  > p {
+    text-align: center;
+  }
+}
+
+.call {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+  margin: .8rem 0 3.2rem;
+}
