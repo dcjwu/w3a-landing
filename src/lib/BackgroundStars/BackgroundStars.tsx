@@ -4,11 +4,9 @@ import s from "./BackgroundStars.module.scss"
 
 export const BackgroundStars: React.FC = (): JSX.Element => {
    return (
-      <>
-         <div className={s.stars}/>
-         <div className={s.stars2}/>
-         <div className={s.stars3}/>
-         <span className={s.fallingStar}/>
-      </>
+      <video autoPlay loop muted
+            className={s.fallingStars}>
+         <source src="fallingstars.mp4" type="video/mp4"/>
+      </video>
    )
 }
