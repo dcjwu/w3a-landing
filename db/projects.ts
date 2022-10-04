@@ -13,7 +13,7 @@ export const dbProjects = {
                "NestJS",
                "AWS"
             ],
-            description: "QualKey provides secure digital credentials so you can prove the authenticity of your qualification.\nThrough QualKey, you can store evidence of your qualification on Header personal device, and you control what, and with whom, information is shared.",
+            description: "QualKey provides secure digital credentials so you can prove the authenticity of your qualification.\nThrough QualKey, you can store evidence of your qualification on your personal device, and you control what, and with whom, information is shared.",
             image: qualkey,
             color: "#0880CE",
             url: "https://www.app.qualkey.org/"
@@ -25,7 +25,7 @@ export const dbProjects = {
                "NextJS",
                "Heroku"
             ],
-            description: "QualKey provides secure digital credentials so you can prove the authenticity of your qualification.\nThrough QualKey, you can store evidence of your qualification on Header personal device, and you control what, and with whom, information is shared.",
+            description: "Karine Paronyanc is a wonderful artist with a hundreds of magnificent paintings.\nHer website is a gallery where you can explore her work and dive into many different chapters of her professional carrier and witness various painting styles.",
             image: paronyanc,
             color: "#FFFFFF",
             url: "https://karineparonyanc.com/"
