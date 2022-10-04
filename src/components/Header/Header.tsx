@@ -23,8 +23,8 @@ export const Header = React.forwardRef<HTMLDivElement>((props, ref) => {
                         variant="display">
                   Web3App<span style={{ color: colorBrand }}>.Agency</span>
                </Heading>
-               <Text color="white" component="p" variant="paragraph">
-                  Make <span style={{ color: colorBrand }}>your</span> technical <span style={{ color: colorBrand }}>wish</span> come true
+               <Text color="white" component="h2" variant="paragraph-lg">
+                  Software <span style={{ color: colorBrand }}>within</span> new dimensions
                </Text>
             </div>
             <Arrow noDifference ariaLabel="move-to-next-block" direction="down"

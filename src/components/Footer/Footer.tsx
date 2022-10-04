@@ -21,7 +21,7 @@ export const Footer: React.FC = (): JSX.Element => {
             <div className={s.left}>
                <Text isBold color="white" component="p"
                      style={{ marginBottom: "1.6rem" }} variant="paragraph-lg">
-                  <span style={{ color: colorBrand }}>A</span>wards and reviews
+                  <span style={{ color: colorBrand }}>A</span>wards and <span style={{ color: colorBrand }}>R</span>eviews
                </Text>
                <div className={s.images}>
                   <Image alt="Clutch Top Developers - Eastern Europe 2021" height={95} quality={100}
