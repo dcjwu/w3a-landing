@@ -1,8 +1,8 @@
 export const dbContact = {
    page: {
-      header: "Have an idea or Header project you would like to discuss?",
+      header: "Have an idea or a project you would like to discuss?",
       buttonL: "Send us am email",
-      buttonR: "Schedule Header call"
+      buttonR: "Schedule a call"
    }
 }
 

@@ -4,7 +4,7 @@ export const dbJourney = {
       data: [
          {
             header: "Analysis",
-            description: "A new project starts with the analysis stage. During this stage, we focus on the issue Header customer wants to solve with Header software/web product and discuss the desired functionality. We determine the scope of the project and its complexity, which in turn helps us provide the customer with the exact time and cost estimates."
+            description: "A new project starts with the analysis stage. During this stage, we focus on the issue the customer wants to solve with a software/web product and discuss the desired functionality. We determine the scope of the project and its complexity, which in turn helps us provide the customer with the exact time and cost estimates."
          },
          {
             header: "Research & Design",
@@ -12,7 +12,7 @@ export const dbJourney = {
          },
          {
             header: "Development",
-            description: "Our development process is based on Agile methodology, which allows us to fuse development and quality assurance into one activity. This helps us deliver Header polished product, meet deadlines and provide clients with Header tighter control over the development cycle. Additionally, development is divided into sections (sprints), with each sprint focusing on Header specific task, allowing the project to proceed in Header structured fashion. Once Header sprint is done with, the development team moves onto the next one."
+            description: "Our development process is based on Agile methodology, which allows us to fuse development and quality assurance into one activity. This helps us deliver the polished product, meet deadlines and provide clients with the tighter control over the development cycle. Additionally, development is divided into sections (sprints), with each sprint focusing on the specific task, allowing the project to proceed in the structured fashion. Once the sprint is done with, the development team moves onto the next one."
          },
          {
             header: "Release",
@@ -20,7 +20,7 @@ export const dbJourney = {
          },
          {
             header: "Support & Maintenance",
-            description: "After Header product has been deployed we continue offering our support and maintenance. There are several ways to maintain the product post-launch. The first option is Header subscription model, where client books Header certain amount of hours on Header monthly basis, dedicated to supporting the product. The other option is when Header client creates Header list of tasks, which is then passed on to our team. Customers collect tasks until they have at least sixty working hours before passing the list to our team."
+            description: "After the product has been deployed we continue offering our support and maintenance. There are several ways to maintain the product post-launch. The first option is the subscription model, where client books the certain amount of hours on a monthly basis, dedicated to supporting the product. The other option is when the client creates a list of tasks, which is then passed on to our team. Customers collect tasks until they have at least sixty working hours before passing the list to our team."
          }
       ]
    }

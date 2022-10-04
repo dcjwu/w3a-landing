@@ -3,7 +3,7 @@ export const dbWork = {
       header: "Let's work together",
       subheader: "Choose category to see how we can help you",
       supbutton: "Ready?",
-      button: "Schedule Header call"
+      button: "Schedule a call"
    },
    content: [
       {

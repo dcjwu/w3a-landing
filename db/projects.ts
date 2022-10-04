@@ -13,7 +13,7 @@ export const dbProjects = {
                "NestJS",
                "AWS"
             ],
-            description: "QualKey provides secure digital credentials so you can prove the authenticity of your qualification.\nThrough QualKey, you can store evidence of your qualification on your personal device, and you control what, and with whom, information is shared.",
+            description: "QualKey provides secure digital credentials so you can prove the authenticity of your qualification.\nThrough QualKey, you can store evidence of your qualification on a personal device, and you control what, and with whom, information is shared.",
             image: qualkey,
             color: "#0880CE",
             url: "https://www.app.qualkey.org/"
