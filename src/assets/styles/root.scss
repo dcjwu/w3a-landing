@@ -1,0 +1,59 @@
+@import "reset";
+
+@import "lib/parallax";
+
+/*! purgecss start ignore */
+@import "aos/src/sass/aos.scss"; /*! purgecss end ignore */
+
+.fade-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity .4s, transform .4s;
+}
+
+.not-found {
+  align-items: center;
+  background-color: $color-grey-1000;
+  display: flex;
+  gap: 3.2rem;
+  height: calc(100vh - 6.4rem);
+  justify-content: center;
+  padding: 3.2rem;
+  width: calc(100vw - 6.4rem);
+
+  @include breakpoint-max($bp-screen-md) {
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    p {
+      text-align: center;
+    }
+    button {
+      background-color: $color-background-grey;
+    }
+  }
+}

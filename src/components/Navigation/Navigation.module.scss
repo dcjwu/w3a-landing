@@ -1,0 +1,62 @@
+@import "../../assets/styles/constants";
+@import "../../assets/styles/mixins";
+
+.navigation {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  margin-top: 3.2rem;
+  max-width: $screen-max-width;
+  mix-blend-mode: difference;
+  padding: 0 3.2rem;
+  position: fixed;
+  top: 0;
+  transform: translateX(-50%);
+  width: calc(100vw - 6.4rem);
+  z-index: 99;
+
+  > button:first-child {
+    background: none;
+    border: 0;
+    height: 3.2rem;
+    outline: 0;
+    padding: 0;
+    width: 3.2rem;
+  }
+
+  &.removeButton {
+    button:nth-child(2) {
+      left: initial;
+      right: 3.2rem;
+      transform: translateX(0) rotate(0deg);
+    }
+    form {
+      display: none;
+    }
+  }
+
+  @include breakpoint-max($bp-screen-md) {
+    justify-content: flex-end;
+
+    &.removeButton {
+      button:nth-child(2) {
+        left: 3.2rem;
+        right: initial;
+        transform: translateX(0) rotate(0deg);
+      }
+      form {
+        display: block;
+      }
+    }
+
+    svg:first-child {
+      display: none;
+    }
+    button:last-child {
+      span {
+        display: none;
+      }
+    }
+  }
+}

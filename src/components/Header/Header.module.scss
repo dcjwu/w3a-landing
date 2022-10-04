@@ -1,0 +1,47 @@
+@import "../../assets/styles/constants";
+@import "../../assets/styles/mixins";
+
+.wrapper {
+  //background: radial-gradient(ellipse at bottom, darken($color-brand, 47) 0%, $color-grey-1000 100%);
+  background-color: $color-grey-1000;
+  height: calc(100vh - 16rem);
+  overflow: hidden;
+  padding: 3.2rem 3.2rem 12.8rem;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: $screen-max-width;
+
+  > div:last-child {
+    bottom: 12.8rem;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+
+    @include breakpoint-max-vertical($bp-screen-smd) {
+      bottom: 3.2rem;
+    }
+  }
+}
+
+.title {
+  > * {
+    text-align: center;
+  }
+  > h1 {
+    @include breakpoint-max($bp-screen-smd) {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+    @include breakpoint-max($bp-screen-xs) {
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+    }
+  }
+}

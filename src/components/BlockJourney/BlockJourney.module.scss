@@ -1,0 +1,46 @@
+@import "src/assets/styles/constants";
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  align-items: center;
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 9rem 0fr 9rem 0fr 9rem 0fr 9rem 0fr 9rem;
+  justify-content: center;
+  overflow-x: scroll;
+  padding: calc(8rem + 2.8rem) 0 calc(8rem + 2.8rem + 3.6rem) 0; //sectionPt + lh
+
+  @include breakpoint-max($screen-max-width) {
+    justify-content: initial;
+  }
+
+  @include breakpoint-max($bp-screen-md) {
+    gap: 3.2rem;
+    grid-template-columns: 6rem 0fr 6rem 0fr 6rem 0fr 6rem 0fr 6rem;
+  }
+
+  &::-webkit-scrollbar {
+    height: .3rem;
+    width: 0.5em;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-brand;
+    transition: background-color .3s ease-in-out;
+  }
+
+  svg {
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+.description {
+  margin-top: 4.8rem;
+  max-width: 700px;
+
+  @include breakpoint-max($bp-screen-md) {
+    margin-top: 3.2rem;
+  }
+}
