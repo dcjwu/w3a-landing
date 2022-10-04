@@ -69,7 +69,7 @@ export const dbStack = {
             image: nest
          },
          {
-            name: "ProcessNext.js",
+            name: "Next.js",
             url: "https://nextjs.org/",
             image: next
          },
