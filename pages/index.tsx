@@ -45,11 +45,21 @@ const Home: NextPage = () => {
       }
    }, [])
 
+   // React.useEffect(() => {
+   //    if (typeof window !== "undefined") {
+   //       if (window.performance && performance.navigation.type == 1) {
+   //          router.replace("/", "#", { shallow: true })
+   //       } else {
+   //          alert("This page is not reloaded")
+   //       }
+   //    }
+   // }, []) //TODO: Fix page refresh!
+
    return (
       <>
 
          {showConsent && <CookiesConsent consentSetter={setShowConsent}/>}
-         
+
          <WelcomeScreenWrapper/>
 
          <Section bg="white"
