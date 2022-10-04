@@ -8,7 +8,7 @@ export const dbJourney = {
          },
          {
             header: "Research & Design",
-            description: "In the research and design stage, our team focuses on determining the needs and wants of the target audience by conducting interviews, secondary research and competitor analysis. ProcessNext, our design team creates user flows, wireframes and clickable prototypes based on the findings of our research. Prototypes are further tested on real users in order to make sure the final product is intuitive, provides seamless user experience and connects users with brand’s identity."
+            description: "In the research and design stage, our team focuses on determining the needs and wants of the target audience by conducting interviews, secondary research and competitor analysis. Next, our design team creates user flows, wireframes and clickable prototypes based on the findings of our research. Prototypes are further tested on real users in order to make sure the final product is intuitive, provides seamless user experience and connects users with brand’s identity."
          },
          {
             header: "Development",
