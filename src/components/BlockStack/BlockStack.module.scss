@@ -9,7 +9,7 @@
   grid-template-columns: repeat(auto-fit, minmax(212px, 1fr));
 
   @include breakpoint-max($bp-screen-md) {
-    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(122px, 2fr));
   }
 }
 
