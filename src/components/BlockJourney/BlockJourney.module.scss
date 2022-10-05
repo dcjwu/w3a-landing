@@ -7,26 +7,16 @@
   gap: 5rem;
   grid-template-columns: 9rem 0fr 9rem 0fr 9rem 0fr 9rem 0fr 9rem;
   justify-content: center;
-  width: 100%;
+  overflow-x: scroll;
   padding: calc(8rem + 2.8rem) 0 calc(8rem + 2.8rem + 3.6rem) 0; //sectionPt + lh
 
   @include breakpoint-max($screen-max-width) {
-    grid-template-columns: 11% 0fr 11% 0fr 11% 0fr 11% 0fr 11%;
-    gap: 3.2rem;
-    justify-content: space-between;
-    padding: calc(5.8rem + 2.1rem) 0 calc(5.8rem + 2.1rem + 3.6rem) 0; //sectionPt + lh
-  }
-
-  @include breakpoint-max($bp-screen-lg) {
-    gap: 2.1rem;
+    justify-content: initial;
   }
 
   @include breakpoint-max($bp-screen-md) {
-    gap: 1.1rem;
-  }
-
-  @include breakpoint-max($bp-screen-smd) {
-    gap: 0.5rem;
+    gap: 3.2rem;
+    grid-template-columns: 6rem 0fr 6rem 0fr 6rem 0fr 6rem 0fr 6rem;
   }
 
   &::-webkit-scrollbar {

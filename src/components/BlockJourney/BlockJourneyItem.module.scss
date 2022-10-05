@@ -7,36 +7,8 @@
   > span:last-child {
     left: 0;
     position: absolute;
-    top: calc(-4.8rem - 2.8rem * 2); //designP + lh
+    top: calc(-4.8rem - 2.8rem); //designP + lh
     transition: color .4s ease-in-out;
-
-    @include breakpoint-max($bp-screen-md) {
-    }
-
-    @include breakpoint-max($bp-screen-smd) {
-      left: -2rem;
-      top: calc(-3.2rem - 2.1rem * 2); //designP + lh(two)
-    }
-  }
-
-  &:nth-child(5) {
-    > span:last-child {
-      bottom: initial;
-      left: 0;
-      position: absolute;
-      top: calc(-4.8rem - 2.8rem * 2); //designP + lh(two)
-      @include breakpoint-max($screen-max-width) {
-        left: -4rem;
-      }
-
-      @include breakpoint-max($bp-screen-md) {
-      }
-
-      @include breakpoint-max($bp-screen-smd) {
-        left: -5rem;
-        top: calc(-3.2rem - 2.1rem * 2); //designP + lh(two)
-      }
-    }
   }
 
   &:nth-child(9) {
@@ -45,17 +17,6 @@
       left: 0;
       position: absolute;
       top: calc(-4.8rem - 2.8rem * 2); //designP + lh(two)
-      @include breakpoint-max($screen-max-width) {
-        left: -5rem;
-      }
-
-      @include breakpoint-max($bp-screen-md) {
-      }
-
-      @include breakpoint-max($bp-screen-smd) {
-        left: -7rem;
-        top: calc(-3.2rem - 2.1rem * 2); //designP + lh(two)
-      }
     }
   }
 
@@ -66,13 +27,6 @@
       left: 0;
       position: absolute;
       top: initial;
-      @include breakpoint-max($bp-screen-md) {
-      }
-
-      @include breakpoint-max($bp-screen-smd) {
-        left: -4rem;
-        bottom: calc(-3.2rem - 2.1rem * 2); //designP + lh(two)
-      }
     }
   }
 
@@ -97,25 +51,14 @@
     width: 6rem;
   }
 
-  @include breakpoint-max($bp-screen-smd) {
-    height: 4rem;
-    width: 4rem;
-  }
-
   > span:first-child {
     transition: color .4s ease-in-out;
-    @include breakpoint-max($bp-screen-smd) {
-      font-size: 2rem;
-    }
   }
 
   &.active {
     background-color: $color-brand;
     > span:first-child {
       color: $color-grey-1000;
-      @include breakpoint-max($bp-screen-smd) {
-        font-size: 2rem;
-      }
     }
   }
 }

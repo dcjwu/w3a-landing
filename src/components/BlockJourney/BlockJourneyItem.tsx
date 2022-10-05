@@ -14,7 +14,7 @@ export const BlockJourneyItem: React.FC<BlockJourneyItemType> = ({ isActive, num
 
    const classNamesItem = cx(s.item, { active: isActive })
    const classNamesItemWrapper = cx(s.itemWrapper, { active: isActive })
-
+   
    return (
       <div className={classNamesItemWrapper}>
          <button className={classNamesItem} onClick={(): void => handleActivateItem(header)}>
