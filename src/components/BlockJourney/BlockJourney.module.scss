@@ -6,7 +6,7 @@
   display: grid;
   gap: 5rem;
   grid-template-columns: 9rem 0fr 9rem 0fr 9rem 0fr 9rem 0fr 9rem;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   padding: calc(8rem + 2.8rem) 0 calc(8rem + 2.8rem + 3.6rem) 0; //sectionPt + lh
 
@@ -26,14 +26,16 @@
   }
 
   @include breakpoint-max($bp-screen-smd) {
+    margin-left: -1rem;
     gap: 0.5rem;
     grid-template-columns: 8% 0fr 8% 0fr 8% 0fr 8% 0fr 8%;
     padding: 2rem 0 3rem 0;
   }
 
   @include breakpoint-max($bp-screen-sm) {
+    margin-left: -1.5rem;
     gap: 0;
-    grid-template-columns: 6% 0fr 6% 0fr 6% 0fr 6% 0fr 6%;
+    grid-template-columns: 1% 0.5% 1% 0.5% 1% 0.5% 1% 0.5% 1%;
     padding: 2rem 0 3rem 0;
   }
 
