@@ -10,9 +10,6 @@
     top: calc(-4.8rem - 2.8rem * 2); //designP + lh
     transition: color .4s ease-in-out;
 
-    @include breakpoint-max($bp-screen-md) {
-    }
-
     @include breakpoint-max($bp-screen-smd) {
       display: none;
     }
@@ -26,9 +23,6 @@
       top: calc(-4.8rem - 2.8rem * 2); //designP + lh(two)
       @include breakpoint-max($screen-max-width) {
         left: -4rem;
-      }
-
-      @include breakpoint-max($bp-screen-md) {
       }
 
       @include breakpoint-max($bp-screen-smd) {
@@ -47,9 +41,6 @@
         left: -5rem;
       }
 
-      @include breakpoint-max($bp-screen-md) {
-      }
-
       @include breakpoint-max($bp-screen-smd) {
         display: none;
       }
@@ -63,8 +54,6 @@
       left: 0;
       position: absolute;
       top: initial;
-      @include breakpoint-max($bp-screen-md) {
-      }
 
       @include breakpoint-max($bp-screen-smd) {
         display: none;
