@@ -28,7 +28,7 @@
   @include breakpoint-max($bp-screen-smd) {
     gap: 0.5rem;
     grid-template-columns: 8% 0fr 8% 0fr 8% 0fr 8% 0fr 8%;
-    padding: 0;
+    padding: 2rem 0 3rem 0;
   }
 
   &::-webkit-scrollbar {
