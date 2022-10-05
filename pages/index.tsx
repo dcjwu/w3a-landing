@@ -53,7 +53,7 @@ const Home: NextPage = () => {
    //          alert("This page is not reloaded")
    //       }
    //    }
-   // }, []) //TODO: Fix page refresh
+   // }, []) //TODO: Fix page refres
 
    return (
       <>
