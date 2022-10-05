@@ -8,12 +8,15 @@ import { dbJourney } from "@db/journey"
 import { Heading } from "@lib/Heading/Heading"
 import { ProcessNext } from "@lib/ProcessNext/ProcessNext"
 import { Text } from "@lib/Text/Text"
+import { useIsElementOnScreen } from "@hooks/useIsElementOnScreen"
 
 import s from "./BlockJourney.module.scss"
 
 export const BlockJourney: React.FC = (): JSX.Element => {
 
    const nodeRef = React.useRef<HTMLElement>(null)
+   const ref = React.useRef<HTMLDivElement>(null)
+   const isElementOnScreen = useIsElementOnScreen(false, ref)
 
    const [activeItem, setActiveItem] = React.useState<ActiveItemEnum>(ActiveItemEnum.Analysis)
 
@@ -38,15 +41,15 @@ export const BlockJourney: React.FC = (): JSX.Element => {
          } else {
             setActiveItem(ActiveItemEnum.Analysis)
          }
-      }, 10000)
+      }, isElementOnScreen ? 8000 : 1000000)
 
       return () => {
          clearInterval(interval)
       }
-   }, [activeItem])
+   }, [isElementOnScreen, activeItem])
 
    return (
-      <div className={s.block}>
+      <div className={s.block} ref = {ref}>
 
          <div className={s.wrapper} data-aos="fade-down">
 

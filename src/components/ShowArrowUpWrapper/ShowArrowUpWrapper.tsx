@@ -21,7 +21,7 @@ export const ShowArrowUpWrapper: React.FC<ShowArrowUpType> = ({ children }): JSX
    const classNamesShowArrowUp = cx(s.wrapper, { show: isArrowShown })
 
    const handleGoToFirstBlock = (): void => {
-      window.location.href = "#"
+      window.location.href = "#home"
       buttonRef.current && buttonRef.current.blur()
    }
 

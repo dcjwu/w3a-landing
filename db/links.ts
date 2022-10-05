@@ -8,5 +8,5 @@ export const dbLinks = [
    { link: dbJourney.page.header, id: "journey" },
    { link: dbStack.page.header, id: "stack" },
    { link: "Team", id: "team" },
-   { link: "Contact us", id: "contact.ts" },
+   { link: "Contact us", id: "contact" },
 ]
