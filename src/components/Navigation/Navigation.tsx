@@ -16,7 +16,7 @@ export const Navigation: React.FC<NavigationType> = ({ removeButton }): JSX.Elem
    const classNamesNavigation = cx(s.navigation, { removeButton: removeButton })
 
    const handleGoToTop = (): void => {
-      window.location.href = "#"
+      window.location.href = "#home"
    }
 
    return (
