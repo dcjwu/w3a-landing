@@ -33,8 +33,6 @@ const Home: NextPage = () => {
 
    const [showConsent, setShowConsent] = React.useState<boolean>(false)
 
-   //TODO: Add onBlur={handleMouseLeave} onFocus={(): void => handleMouseEnter(item)} to element which use designHook
-
    React.useEffect(() => {
       Aos.init(aosParams)
 
@@ -44,16 +42,6 @@ const Home: NextPage = () => {
          setShowConsent(true)
       }
    }, [])
-
-   // React.useEffect(() => {
-   //    if (typeof window !== "undefined") {
-   //       if (window.performance && performance.navigation.type == 1) {
-   //          router.replace("/", "#", { shallow: true })
-   //       } else {
-   //          alert("This page is not reloaded")
-   //       }
-   //    }
-   // }, []) //TODO: Fix page refres
 
    return (
       <>
