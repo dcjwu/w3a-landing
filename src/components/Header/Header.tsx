@@ -15,7 +15,7 @@ export const Header = React.forwardRef<HTMLDivElement>((props, ref) => {
    }
 
    return (
-      <header id="home" ref={ref} className={s.wrapper}>
+      <header ref={ref} className={s.wrapper} id="home">
          <BackgroundStars/>
          <div className={s.header}>
             <div className={s.title}>

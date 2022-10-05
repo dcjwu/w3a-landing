@@ -5,10 +5,10 @@ import { CSSTransition, SwitchTransition } from "react-transition-group"
 import { BlockJourneyItem } from "@components/BlockJourney/BlockJourneyItem"
 import { ActiveItemEnum } from "@customTypes/components"
 import { dbJourney } from "@db/journey"
+import { useIsElementOnScreen } from "@hooks/useIsElementOnScreen"
 import { Heading } from "@lib/Heading/Heading"
 import { ProcessNext } from "@lib/ProcessNext/ProcessNext"
 import { Text } from "@lib/Text/Text"
-import { useIsElementOnScreen } from "@hooks/useIsElementOnScreen"
 
 import s from "./BlockJourney.module.scss"
 
@@ -49,7 +49,7 @@ export const BlockJourney: React.FC = (): JSX.Element => {
    }, [isElementOnScreen, activeItem])
 
    return (
-      <div className={s.block} ref = {ref}>
+      <div ref = {ref} className={s.block}>
 
          <div className={s.wrapper} data-aos="fade-down">
 
