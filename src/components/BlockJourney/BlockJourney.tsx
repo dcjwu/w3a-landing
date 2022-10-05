@@ -38,7 +38,7 @@ export const BlockJourney: React.FC = (): JSX.Element => {
          } else {
             setActiveItem(ActiveItemEnum.Analysis)
          }
-      }, 8000)
+      }, 10000)
 
       return () => {
          clearInterval(interval)

@@ -14,8 +14,7 @@
     }
 
     @include breakpoint-max($bp-screen-smd) {
-      left: -2rem;
-      top: calc(-3.2rem - 2.1rem * 2); //designP + lh(two)
+      display: none;
     }
   }
 
@@ -33,8 +32,7 @@
       }
 
       @include breakpoint-max($bp-screen-smd) {
-        left: -5rem;
-        top: calc(-3.2rem - 2.1rem * 2); //designP + lh(two)
+        display: none;
       }
     }
   }
@@ -53,8 +51,7 @@
       }
 
       @include breakpoint-max($bp-screen-smd) {
-        left: -7rem;
-        top: calc(-3.2rem - 2.1rem * 2); //designP + lh(two)
+        display: none;
       }
     }
   }
@@ -70,8 +67,7 @@
       }
 
       @include breakpoint-max($bp-screen-smd) {
-        left: -4rem;
-        bottom: calc(-3.2rem - 2.1rem * 2); //designP + lh(two)
+        display: none;
       }
     }
   }
@@ -98,8 +94,9 @@
   }
 
   @include breakpoint-max($bp-screen-smd) {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
+    background: transparent;
   }
 
   > span:first-child {
@@ -111,9 +108,13 @@
 
   &.active {
     background-color: $color-brand;
+    @include breakpoint-max($bp-screen-smd) {
+      background-color: transparent;
+    }
     > span:first-child {
       color: $color-grey-1000;
       @include breakpoint-max($bp-screen-smd) {
+        color: $color-brand;
         font-size: 2rem;
       }
     }
