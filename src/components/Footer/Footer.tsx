@@ -1,7 +1,6 @@
 import React from "react"
 
 import Image from "next/image"
-import Script from "next/script"
 
 import clutch1 from "@assets/images/footer/clutch1.png"
 import clutch2 from "@assets/images/footer/clutch2.png"
@@ -35,7 +34,6 @@ export const Footer: React.FC = (): JSX.Element => {
                          width={110.67}/>
                </div>
 
-               <Script src="https://widget.clutch.co/static/js/widget.js"/>
                <div className="clutch-widget" data-clutchcompany-id="1925623" data-expandifr="true"
                     data-height="65" data-nofollow="true" data-scale="100"
                     data-url="https://widget.clutch.co/" data-widget-type="7"/>
