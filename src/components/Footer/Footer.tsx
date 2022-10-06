@@ -1,11 +1,11 @@
 import React from "react"
 
 import Image from "next/image"
+import Script from "next/script"
 
 import clutch1 from "@assets/images/footer/clutch1.png"
 import clutch2 from "@assets/images/footer/clutch2.png"
 import clutch3 from "@assets/images/footer/clutch3.png"
-import clutch4 from "@assets/images/footer/clutch4.png"
 import { FooterContacts } from "@components/Footer/FooterContacts"
 import { FooterNavigation } from "@components/Footer/FooterNavigation"
 import { colorBrand } from "@constants/styles"
@@ -34,16 +34,12 @@ export const Footer: React.FC = (): JSX.Element => {
                          src={clutch3}
                          width={110.67}/>
                </div>
-               <a href="https://clutch.co/profile/web3app#summary" rel="noreferrer" style={{
-                  width: 265,
-                  height: 89.98
-               }}
-                  target="_blank">
-                  <Image alt="Clutch Reviews" height={76.39} objectFit="contain"
-                         quality={100}
-                         src={clutch4}
-                         width={225}/>
-               </a>
+
+               <Script src="https://widget.clutch.co/static/js/widget.js"/>
+               <div className="clutch-widget" data-clutchcompany-id="1925623" data-expandifr="true"
+                    data-height="65" data-nofollow="true" data-scale="100"
+                    data-url="https://widget.clutch.co/" data-widget-type="7"/>
+
             </div>
             <div className={s.right}>
 
