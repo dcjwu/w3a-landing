@@ -5,7 +5,7 @@ import uxui from "@assets/images/capabilities/uxui.svg"
 import webmobile from "@assets/images/capabilities/webmobile.svg"
 
 export const dbCapabilities = {
-   page: { header: "Capabilities" },
+   page: { header: "Our services" },
    content: {
       data: [
          {

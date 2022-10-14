@@ -1,5 +1,5 @@
 export const dbJourney = {
-   page: { header: "Customer journey" },
+   page: { header: "Our approach" },
    content: {
       data: [
          {

@@ -7,7 +7,7 @@ export const dbWork = {
    },
    content: [
       {
-         header: "Early Stage Startup",
+         header: "Want to build an MVP?",
          subheader: [
             "Your Challenge",
             "Our Solution"
@@ -42,7 +42,7 @@ export const dbWork = {
          ]
       },
       {
-         header: "Mature Startup",
+         header: "Scaling up your project?",
          subheader: [
             "Your Challenge",
             "Our Solution"
@@ -68,7 +68,7 @@ export const dbWork = {
          ]
       },
       {
-         header: "Tech Company",
+         header: "Already a tech company, but looking for an improvement?",
          subheader: [
             "Your Challenge",
             "Our Solution"
