@@ -3,6 +3,7 @@ import React from "react"
 import Aos from "aos"
 import { getCookie } from "cookies-next"
 import dynamic from "next/dynamic"
+import Script from "next/script"
 
 import { BlockWork } from "@components/BlockWork/BlockWork"
 import { Footer } from "@components/Footer/Footer"
@@ -45,6 +46,21 @@ const Home: NextPage = () => {
 
    return (
       <>
+
+         <Script src="https://www.googletagmanager.com/gtag/js?id=G-F33QRJCH1T"
+                 strategy="lazyOnload"/>
+
+         <Script id="script" strategy="lazyOnload">
+            {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                     gtag('config', 'G-F33QRJCH1T');
+                `}
+         </Script>
+
+         <Script src="https://widget.clutch.co/static/js/widget.js"/>
 
          {showConsent && <CookiesConsent consentSetter={setShowConsent}/>}
 

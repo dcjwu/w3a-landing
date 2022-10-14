@@ -19,6 +19,7 @@ const MyApp = ({
                   name="viewport"/>
             <title>Web3App.Agency | High Quality Blockchain Development</title>
          </Head>
+
          <RecoilRoot>
             <Component {...pageProps} />
          </RecoilRoot>
