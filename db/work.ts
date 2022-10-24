@@ -68,7 +68,7 @@ export const dbWork = {
          ]
       },
       {
-         header: "Already a tech company, but looking for an improvement?",
+         header: "Already a tech company?",
          subheader: [
             "Your Challenge",
             "Our Solution"
