@@ -1,7 +1,8 @@
-## Getting Started
+#### Context:
+__October 2022.__ Updated landing to new version according to figma.
 
-Run the development server:
+#### Technologies used:
+- Next.js
 
-```bash
-yarn dev
-```
+#### Status:
+Project is finished.
